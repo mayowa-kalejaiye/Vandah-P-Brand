@@ -1,6 +1,7 @@
 import { DockApp } from "@/components/Dock";
 import Link from "next/link";
 import SparklesText from "@/components/SparklesText";
+import { BentoGrid, BentoCard } from "@/components/BentoGrid";
 
 export default function CommercialModelPage() {
   return (
@@ -132,14 +133,7 @@ export default function CommercialModelPage() {
                 <div className="absolute inset-0 bg-orange-50 dark:bg-orange-950/20" />
               }
             />
-                <div className="w-12 h-12 bg-emerald-200 rounded-full"></div>
-                <div>
-                  <p className="font-bold text-gray-900">Marcus Johnson</p>
-                  <p className="text-gray-600 text-sm">Marketing Director</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          </BentoGrid>
         </div>
       </section>
 

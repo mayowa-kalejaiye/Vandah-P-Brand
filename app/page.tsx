@@ -168,7 +168,7 @@ export default function Home() {
           {/* Scrolling Curved Text */}
           <div className="w-screen -mx-8 absolute -bottom-4 md:-bottom-16 z-10">
             {/* Mobile version - larger */}
-            <div className="md:hidden" style={{ color: '#ffffff' }} className="animate-slide-up-from-line md:hidden" style={{ animationDelay: "0.2s", opacity: 0, color: '#ffffff' }}>
+            <div className="md:hidden" style={{ color: '#ffffff' }}>
               <CanvasCurvedLoop
                 text="Web3 • Crypto • Finance • Blockchain • DeFi • NFTs • "
                 speed={1.5}
@@ -181,7 +181,7 @@ export default function Home() {
               />
             </div>
             {/* Desktop version - smaller */}
-            <div className="hidden md:block" style={{ color: '#ffffff' }} className="animate-slide-up-from-line hidden md:block" style={{ animationDelay: "0.2s", opacity: 0, color: '#ffffff' }}>
+            <div className="hidden md:block" style={{ color: '#ffffff' }}>
               <CanvasCurvedLoop
                 text="Web3 • Crypto • Finance • Blockchain • DeFi • NFTs • "
                 speed={1.5}
@@ -517,7 +517,7 @@ export default function Home() {
         </div>
       </div>
       
-      {/* VideoText "victory abu" - Full Width Orange Starting from Left */}
+      {/* VideoText "vandah" - Full Width Orange Starting from Left */}
       <div className="w-screen h-48 md:h-64 mt-2 relative left-0">
         <VideoText 
           src="https://ls29t3z55w.ufs.sh/f/JEKFIJDsOBct0vrmLYJRG8BKHmvZQkWJ9ElIVcNfzPg63Mbo"

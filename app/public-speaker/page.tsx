@@ -1,6 +1,7 @@
 import { DockApp } from "@/components/Dock";
 import Link from "next/link";
 import SparklesText from "@/components/SparklesText";
+import { BentoGrid, BentoCard } from "@/components/BentoGrid";
 
 export default function PublicSpeakerPage() {
   return (
@@ -132,16 +133,9 @@ export default function PublicSpeakerPage() {
                 <div className="absolute inset-0 bg-orange-50 dark:bg-orange-950/20" />
               }
             />
-                <div className="w-12 h-12 bg-orange-200 rounded-full"></div>
-                <div>
-                  <p className="font-bold text-gray-900">Carlos Rivera</p>
-                  <p className="text-gray-600 text-sm">Summit Producer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </BentoGrid>
+      </div>
+    </section>
 
       {/* Proof of Work Section */}
       <section className="min-h-screen px-8 py-24">

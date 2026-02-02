@@ -116,7 +116,7 @@ export default function FounderCEOPage() {
               glowOpacity={0.3}
             >
               <img
-                src="/campus.png"
+                src="/campus3.png"
                 alt="CampusBestie Campus"
                 className="w-full h-auto rounded-lg"
               />

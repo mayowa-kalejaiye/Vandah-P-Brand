@@ -41,19 +41,19 @@ export default function GhostWriterPage() {
           </h2>
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
             <p>
-              Victory Abu's ghostwriting career emerged from a passion for storytelling and a talent for capturing 
-              diverse voices. She has helped executives, entrepreneurs, and thought leaders articulate their ideas 
-              through books, articles, speeches, and digital content.
+              Victory Abu's ghostwriting work grew from a love of storytelling and a knack for authentically channeling
+              other voices. Rather than working directly as a personal writer for headline thought leaders, Victory has
+              focused her craft across six dedicated ghostwriting brands and contributed to three additional brand
+              campaigns — predominantly in the Web3 and blockchain space.
             </p>
             <p>
-              With a deep understanding of narrative structure, audience psychology, and persuasive communication, 
-              Victory transforms ideas into compelling content that drives engagement and action. Her versatility 
-              allows her to write across multiple industries and formats.
+              She brings a practical approach to narrative structure, audience-first messaging, and conversion-focused
+              content. Victory writes long-form books, articles, speeches, and technical Web3 content, always prioritizing
+              the client's tone and objectives while shaping ideas into clear, persuasive narratives.
             </p>
             <p>
-              Her ghostwriting philosophy emphasizes collaboration and voice preservation—ensuring clients' 
-              authentic perspectives shine through while benefiting from professional writing expertise. From 
-              thought leadership articles to full-length manuscripts, Victory delivers exceptional work.
+              Her collaborative process centers on voice preservation and measurable impact: aligning content with
+              product goals, community growth, and brand positioning for Web3 projects and forward-thinking companies.
             </p>
           </div>
         </div>
@@ -71,16 +71,16 @@ export default function GhostWriterPage() {
               <p className="text-gray-700 text-lg">Articles & Blog Posts Written</p>
             </div>
             <div className="p-8 bg-purple-50 rounded-lg">
-              <div className="text-5xl font-bold text-purple-600 mb-4">10+</div>
-              <p className="text-gray-700 text-lg">Books Ghostwritten</p>
+              <div className="text-5xl font-bold text-purple-600 mb-4">6</div>
+              <p className="text-gray-700 text-lg">Brands Ghostwritten For</p>
             </div>
             <div className="p-8 bg-blue-50 rounded-lg">
               <div className="text-5xl font-bold text-blue-600 mb-4">50+</div>
               <p className="text-gray-700 text-lg">Speeches Crafted</p>
             </div>
             <div className="p-8 bg-emerald-50 rounded-lg">
-              <div className="text-5xl font-bold text-emerald-600 mb-4">30+</div>
-              <p className="text-gray-700 text-lg">Executive Clients Served</p>
+              <div className="text-5xl font-bold text-emerald-600 mb-4">3</div>
+              <p className="text-gray-700 text-lg">Other Brands Contributed</p>
             </div>
             <div className="p-8 bg-orange-50 rounded-lg">
               <div className="text-5xl font-bold text-orange-600 mb-4">2M+</div>
@@ -127,7 +127,7 @@ export default function GhostWriterPage() {
             />
             <BentoCard
               name="Richard Foster"
-              description="The thought leadership articles Victory ghostwrites have significantly elevated my personal brand. Her writing is consistently excellent."
+              description="The content Victory ghostwrites has significantly elevated our brand messaging. Her writing is consistently excellent."
               className="lg:col-span-2"
               background={
                 <div className="absolute inset-0 bg-emerald-50 dark:bg-emerald-950/20" />
@@ -158,11 +158,12 @@ export default function GhostWriterPage() {
             </div>
 
             <div className="border-l-4 border-purple-500 pl-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Thought Leadership Content</h3>
-              <p className="text-gray-700 mb-4">
-                Produced 100+ thought leadership articles for C-suite executives, published in major industry 
-                publications and corporate blogs. Content consistently drives engagement and positions clients as experts.
-              </p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Thought Leadership & Brand Content</h3>
+                <p className="text-gray-700 mb-4">
+                  Produced 100+ articles, explainers, and brand-led content — primarily for Web3 projects and technology
+                  brands. These pieces focus on product storytelling, developer adoption, and community-facing education rather
+                  than personal thought-leader positioning.
+                </p>
               <div className="flex gap-2 flex-wrap">
                 <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">Articles</span>
                 <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">Thought Leadership</span>
