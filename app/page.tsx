@@ -5,8 +5,10 @@ import Link from "next/link";
 import CanvasCurvedLoop from "@/components/CanvasCurvedLoop";
 import { DockApp } from "@/components/Dock";
 import { FlipWords } from "@/components/FlipWords";
+
 import VideoText from "@/components/VideoText";
 import ThreeDCard from "@/components/ThreeDCard";
+import Glass from "@/components/Glass";
 
 export default function Home() {
 
@@ -100,13 +102,14 @@ export default function Home() {
       {/* Content Container */}
       <div className="relative z-10 min-h-screen flex flex-col">
         {/* Top Section - Logo/Branding and Bio */}
-        <div className="pt-8 px-8 flex items-center justify-between">
+        <div className="pt-16 px-8 flex items-start justify-between">
           <div className="overflow-hidden">
             <p className="text-white/70 text-sm animate-slide-up">© Victory Abu</p>
           </div>
           <div className="overflow-hidden">
-            <p className="text-white/90 text-sm leading-relaxed max-w-2xl text-right animate-slide-up" style={{ animationDelay: "0.1s", opacity: 0 }}>
-              Web3 enthusiast and Crypto strategist, dedicated to navigating the decentralized future through innovative blockchain solutions and financial technology.
+            <p className="text-right animate-slide-up max-w-2xl" style={{ animationDelay: "0.1s", opacity: 0 }}>
+              <strong className="block text-white text-3xl md:text-5xl font-bold leading-tight">ELEVATE YOUR BRAND</strong>
+              <span className="block text-white/90 text-base md:text-lg mt-1">with clarity • purpose • simplicity</span>
             </p>
           </div>
         </div>
@@ -119,13 +122,25 @@ export default function Home() {
             @import url('https://fonts.googleapis.com/css2?family=Phudu:wght@700&display=swap');
             .font-phudu {
               font-family: 'Phudu', cursive;
-            }
+            } 
           `}</style>
-          <div className="absolute right-8 md:right-74 top-1/2 -translate-y-64 md:-translate-y-70">
+          <div className="absolute right-8 md:right-74 top-1/4 md:top-1/6">
             <div className="relative inline-block">
-              <div className="font-phudu text-3xl md:text-5xl font-bold tracking-tight text-white py-1 px-4 flex items-center justify-center uppercase relative">
+              {/* Advanced Glassmorphism background */}
+              <div className="absolute inset-0 w-full h-full z-0">
+                <Glass
+                  borderRadius="9999px"
+                  blurAmount={24}
+                  opacity={0.18}
+                  borderColor="rgba(255,255,255,0.35)"
+                  borderWidth="2px"
+                  backgroundColor="#fff"
+                  className="w-full h-full rounded-full"
+                />
+              </div>
+              <div className="font-phudu text-3xl md:text-5xl font-bold tracking-tight text-white py-1 px-8 flex items-center justify-center uppercase relative rounded-full z-10">
                 <FlipWords 
-                  words={[
+                  words={[ 
                     "FOUNDER & CEO",
                     "WEB3 STRATEGIST",
                     "PROJECT CONSULTANT",
@@ -138,12 +153,13 @@ export default function Home() {
                   duration={3000} 
                 />
               </div>
-              <div className="absolute inset-0 border-2 border-white/50 rounded-lg pointer-events-none"></div>
-              {/* Selection Handles */}
-              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-sm -top-1.5 -left-1.5"></div>
-              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-sm -top-1.5 -right-1.5"></div>
-              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-sm -bottom-1.5 -left-1.5"></div>
-              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-sm -bottom-1.5 -right-1.5"></div>
+              {/* Curved border overlay */}
+              <div className="absolute inset-0 border-2 border-white/50 rounded-full pointer-events-none z-20"></div>
+              {/* Selection Handles for curved border */}
+              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-full -top-1.5 -left-1.5 z-30"></div>
+              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-full -top-1.5 -right-1.5 z-30"></div>
+              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-full -bottom-1.5 -left-1.5 z-30"></div>
+              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-full -bottom-1.5 -right-1.5 z-30"></div>
             </div>
           </div>
 
@@ -168,7 +184,7 @@ export default function Home() {
           {/* Scrolling Curved Text */}
           <div className="w-screen -mx-8 absolute -bottom-4 md:-bottom-16 z-10">
             {/* Mobile version - larger */}
-            <div className="md:hidden" style={{ color: '#ffffff' }}>
+            <div className="md:hidden pointer-events-none" style={{ color: '#ffffff' }}>
               <CanvasCurvedLoop
                 text="Web3 • Crypto • Finance • Blockchain • DeFi • NFTs • "
                 speed={1.5}
