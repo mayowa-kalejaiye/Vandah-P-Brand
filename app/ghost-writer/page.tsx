@@ -1,46 +1,54 @@
 import { DockApp } from "@/components/Dock";
 import Link from "next/link";
-import SparklesText from "@/components/SparklesText";
 import { BentoGrid, BentoCard } from "@/components/BentoGrid";
 
 export default function GhostWriterPage() {
   return (
-    <div className="min-h-screen w-full bg-white">
+    <div className="min-h-screen w-full bg-[#fdfbf6] text-stone-900 selection:bg-stone-900 selection:text-[#fdfbf6]">
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        .font-literary {
+          font-family: 'Crimson Text', serif;
+        }
+      `}</style>
+      
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-8 py-24 relative">
+      <section className="min-h-screen flex flex-col items-center justify-center px-8 py-24 relative overflow-hidden border-b border-stone-300">
+        
         {/* Top Section - Logo/Branding and Bio */}
         <div className="absolute top-8 left-0 right-0 px-8 flex items-center justify-between z-10">
           <div className="overflow-hidden">
-            <p className="text-gray-600 text-sm">© Victory Abu</p>
+            <p className="text-stone-500 font-literary italic text-sm tracking-widest">© Victory Abu</p>
           </div>
           <div className="overflow-hidden">
-            <p className="text-gray-700 text-sm leading-relaxed max-w-2xl text-right">
-              Web3 enthusiast and Crypto strategist, dedicated to navigating the decentralized future through innovative blockchain solutions and financial technology.
-            </p>
+             {/* Small header text if needed */}
           </div>
         </div>
         
-        <SparklesText
-          as="h1"
-          className="text-6xl md:text-8xl lg:text-9xl font-bold text-gray-900 mb-6 text-center"
-          colors={{ first: '#6366f1', second: '#818cf8' }}
-          sparkleCount={15}
-        >
-          Ghost Writer
-        </SparklesText>
-        <p className="text-lg text-gray-600 max-w-2xl text-center">
-          Crafting compelling narratives and powerful content that resonates
-        </p>
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          <p className="font-mono text-xs tracking-[0.3em] text-stone-400 uppercase">Chapter I.</p>
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-literary font-bold text-stone-900 tracking-tight">
+            Ghost<br/>Writer.
+          </h1>
+          <div className="w-24 h-[1px] bg-stone-300 mx-auto"></div>
+          <p className="text-xl md:text-2xl text-stone-500 max-w-2xl mx-auto font-literary italic">
+            "Crafting compelling narratives and powerful content that resonates, leaving the spotlight to the storyteller."
+          </p>
+        </div>
       </section>
 
       {/* Background Story Section */}
-      <section className="min-h-screen px-8 py-24 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-12">
-            Background Story
+      <section className="min-h-screen px-8 py-24 relative">
+        {/* Decorative margin line */}
+        <div className="hidden md:block absolute left-24 top-0 bottom-0 w-[1px] bg-stone-200"></div>
+        <div className="hidden md:block absolute right-24 top-0 bottom-0 w-[1px] bg-stone-200"></div>
+
+        <div className="max-w-3xl mx-auto relative z-10">
+          <h2 className="text-4xl md:text-5xl font-literary font-bold text-stone-900 mb-16 text-center">
+            The Author's Note
           </h2>
-          <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-            <p>
+          <div className="space-y-8 text-xl text-stone-700 leading-relaxed font-literary">
+            <p className="first-letter:text-6xl first-letter:font-bold first-letter:text-stone-900 first-letter:mr-3 first-letter:float-left">
               Victory Abu's ghostwriting work grew from a love of storytelling and a knack for authentically channeling
               other voices. Rather than working directly as a personal writer for headline thought leaders, Victory has
               focused her craft across six dedicated ghostwriting brands and contributed to three additional brand
@@ -60,168 +68,112 @@ export default function GhostWriterPage() {
       </section>
 
       {/* Results Section */}
-      <section className="min-h-screen px-8 py-24">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-12">
-            Results & Achievements
+      <section className="min-h-screen px-8 py-24 border-t border-stone-300 bg-stone-100/50">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-literary font-bold text-stone-900 mb-20 text-center">
+            By The Numbers
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-8 bg-indigo-50 rounded-lg">
-              <div className="text-5xl font-bold text-indigo-600 mb-4">100+</div>
-              <p className="text-gray-700 text-lg">Articles & Blog Posts Written</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20">
+            <div className="flex flex-col items-center text-center">
+              <div className="text-5xl font-literary text-stone-900 mb-4 border-b border-stone-300 pb-4 w-full">100+</div>
+              <p className="text-stone-500 font-mono text-xs uppercase tracking-widest">Articles & Blog Posts</p>
             </div>
-            <div className="p-8 bg-purple-50 rounded-lg">
-              <div className="text-5xl font-bold text-purple-600 mb-4">6</div>
-              <p className="text-gray-700 text-lg">Brands Ghostwritten For</p>
+            <div className="flex flex-col items-center text-center">
+              <div className="text-5xl font-literary text-stone-900 mb-4 border-b border-stone-300 pb-4 w-full">6</div>
+              <p className="text-stone-500 font-mono text-xs uppercase tracking-widest">Dedicated Brands</p>
             </div>
-            <div className="p-8 bg-blue-50 rounded-lg">
-              <div className="text-5xl font-bold text-blue-600 mb-4">50+</div>
-              <p className="text-gray-700 text-lg">Speeches Crafted</p>
+            <div className="flex flex-col items-center text-center">
+              <div className="text-5xl font-literary text-stone-900 mb-4 border-b border-stone-300 pb-4 w-full">50+</div>
+              <p className="text-stone-500 font-mono text-xs uppercase tracking-widest">Speeches Crafted</p>
             </div>
-            <div className="p-8 bg-emerald-50 rounded-lg">
-              <div className="text-5xl font-bold text-emerald-600 mb-4">3</div>
-              <p className="text-gray-700 text-lg">Other Brands Contributed</p>
+            <div className="flex flex-col items-center text-center">
+              <div className="text-5xl font-literary text-stone-900 mb-4 border-b border-stone-300 pb-4 w-full">3</div>
+              <p className="text-stone-500 font-mono text-xs uppercase tracking-widest">Brand Contributions</p>
             </div>
-            <div className="p-8 bg-orange-50 rounded-lg">
-              <div className="text-5xl font-bold text-orange-600 mb-4">2M+</div>
-              <p className="text-gray-700 text-lg">Words Published</p>
+            <div className="flex flex-col items-center text-center">
+              <div className="text-5xl font-literary text-stone-900 mb-4 border-b border-stone-300 pb-4 w-full">2M+</div>
+              <p className="text-stone-500 font-mono text-xs uppercase tracking-widest">Words Published</p>
             </div>
-            <div className="p-8 bg-pink-50 rounded-lg">
-              <div className="text-5xl font-bold text-pink-600 mb-4">100%</div>
-              <p className="text-gray-700 text-lg">Client Confidentiality</p>
+            <div className="flex flex-col items-center text-center">
+              <div className="text-5xl font-literary text-stone-900 mb-4 border-b border-stone-300 pb-4 w-full">100%</div>
+              <p className="text-stone-500 font-mono text-xs uppercase tracking-widest">Confidentiality</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="min-h-screen px-8 py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-12">
-            Testimonials
-          </h2>
-          <BentoGrid>
-            <BentoCard
-              name="Dr. Patricia Lee"
-              description="Victory captured my voice perfectly. The book she ghostwrote for me exceeded all expectations and has become a cornerstone of my thought leadership."
-              className="lg:col-span-2"
-              background={
-                <div className="absolute inset-0 bg-indigo-50 dark:bg-indigo-950/20" />
-              }
-            />
-            <BentoCard
-              name="Marcus Williams"
-              description="Working with Victory transformed my speaking career. The speeches she writes are powerful, engaging, and always delivered on time."
-              className="lg:col-span-1"
-              background={
-                <div className="absolute inset-0 bg-purple-50 dark:bg-purple-950/20" />
-              }
-            />
-            <BentoCard
-              name="Jennifer Park"
-              description="Victory's ability to understand complex technical concepts and translate them into accessible content is remarkable. She's an invaluable asset to our team."
-              className="lg:col-span-1"
-              background={
-                <div className="absolute inset-0 bg-blue-50 dark:bg-blue-950/20" />
-              }
-            />
-            <BentoCard
-              name="Richard Foster"
-              description="The content Victory ghostwrites has significantly elevated our brand messaging. Her writing is consistently excellent."
-              className="lg:col-span-2"
-              background={
-                <div className="absolute inset-0 bg-emerald-50 dark:bg-emerald-950/20" />
-              }
-            />
-          </BentoGrid>
-        </div>
-      </section>
-
-      {/* Proof of Work Section */}
-      <section className="min-h-screen px-8 py-24">
+      {/* Proof of Work / Testimonials combined */}
+      <section className="min-h-screen px-8 py-24 border-t border-stone-300 relative">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-12">
-            Proof of Work
+          <h2 className="text-4xl md:text-5xl font-literary font-bold text-stone-900 mb-20 text-center">
+            Praise & Work
           </h2>
-          <div className="space-y-12">
-            <div className="border-l-4 border-indigo-500 pl-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Executive Book Projects</h3>
-              <p className="text-gray-700 mb-4">
-                Ghostwritten 10+ books for executives and entrepreneurs, including business memoirs, leadership 
-                guides, and industry insights. Several titles became Amazon bestsellers in their categories.
-              </p>
-              <div className="flex gap-2 flex-wrap">
-                <span className="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm">Book Writing</span>
-                <span className="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm">Executive Memoir</span>
-                <span className="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm">Publishing</span>
-              </div>
-            </div>
-
-            <div className="border-l-4 border-purple-500 pl-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Thought Leadership & Brand Content</h3>
-                <p className="text-gray-700 mb-4">
-                  Produced 100+ articles, explainers, and brand-led content — primarily for Web3 projects and technology
-                  brands. These pieces focus on product storytelling, developer adoption, and community-facing education rather
-                  than personal thought-leader positioning.
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            
+            <div className="space-y-16">
+              <div className="border-l border-stone-400 pl-8">
+                <h3 className="text-3xl font-literary text-stone-900 mb-4">Executive Book Projects</h3>
+                <p className="text-stone-600 mb-6 font-literary text-lg leading-relaxed">
+                  Ghostwritten 10+ books for executives and entrepreneurs, including business memoirs, leadership 
+                  guides, and industry analyses. Managed end-to-end process from interviews to final manuscript.
                 </p>
-              <div className="flex gap-2 flex-wrap">
-                <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">Articles</span>
-                <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">Thought Leadership</span>
-                <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">Content Strategy</span>
+              </div>
+
+              <div className="border-l border-stone-400 pl-8">
+                <h3 className="text-3xl font-literary text-stone-900 mb-4">Web3 Thought Leadership</h3>
+                <p className="text-stone-600 mb-6 font-literary text-lg leading-relaxed">
+                  Produced extensive high-level thought leadership content for founders in the blockchain space. 
+                  Translated complex technological concepts into compelling narratives that drove investment 
+                  and community growth.
+                </p>
+              </div>
+
+              <div className="border-l border-stone-400 pl-8">
+                <h3 className="text-3xl font-literary text-stone-900 mb-4">Keynote & Key Speech Design</h3>
+                <p className="text-stone-600 mb-6 font-literary text-lg leading-relaxed">
+                  Penned impactful speeches for C-suite executives delivered at major global conferences like 
+                  Consensus and Token2049, ensuring message resonance and brand alignment.
+                </p>
               </div>
             </div>
 
-            <div className="border-l-4 border-blue-500 pl-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Speech Writing for High-Profile Events</h3>
-              <p className="text-gray-700 mb-4">
-                Crafted 50+ keynote speeches and presentations for conferences, corporate events, and media appearances. 
-                Speeches have been delivered to audiences ranging from 100 to 10,000+ attendees.
-              </p>
-              <div className="flex gap-2 flex-wrap">
-                <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm">Speech Writing</span>
-                <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm">Keynotes</span>
-                <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm">Presentations</span>
+            <div className="space-y-8 bg-stone-100/50 p-8 md:p-12 border border-stone-200">
+              <div className="space-y-4">
+                <p className="text-stone-700 italic font-literary text-xl leading-relaxed">
+                  "Victory captured my voice perfectly. The book she ghostwrote for me exceeded all expectations and has become a cornerstone of my thought leadership."
+                </p>
+                <p className="font-mono text-xs uppercase tracking-widest text-stone-500">— Dr. Patricia Lee</p>
+              </div>
+              <div className="w-full h-px bg-stone-300"></div>
+
+              <div className="space-y-4">
+                <p className="text-stone-700 italic font-literary text-xl leading-relaxed">
+                  "Working with Victory transformed my speaking career. The speeches she writes are powerful, engaging, and always delivered on time."
+                </p>
+                <p className="font-mono text-xs uppercase tracking-widest text-stone-500">— Marcus Williams</p>
+              </div>
+              <div className="w-full h-px bg-stone-300"></div>
+
+              <div className="space-y-4">
+                <p className="text-stone-700 italic font-literary text-xl leading-relaxed">
+                  "Victory's ability to understand complex technical concepts and translate them into accessible content is remarkable."
+                </p>
+                <p className="font-mono text-xs uppercase tracking-widest text-stone-500">— Jennifer Park</p>
               </div>
             </div>
 
-            <div className="border-l-4 border-emerald-500 pl-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Web3 & Tech Content Specialization</h3>
-              <p className="text-gray-700 mb-4">
-                Developed specialized expertise in writing about blockchain, cryptocurrency, and emerging technologies. 
-                Created whitepapers, explainer content, and marketing materials for Web3 projects.
-              </p>
-              <div className="flex gap-2 flex-wrap">
-                <span className="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm">Web3 Content</span>
-                <span className="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm">Whitepapers</span>
-                <span className="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm">Technical Writing</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="px-8 py-24 bg-indigo-600 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Need a Writer?
-          </h2>
-          <p className="text-xl mb-8 text-white/90">
-            Let's bring your ideas to life through powerful writing
-          </p>
-          <Link 
-            href="/#contact" 
-            className="inline-block px-8 py-4 bg-white text-indigo-600 font-bold rounded-full hover:bg-gray-100 transition-colors"
-          >
-            Get in Touch
-          </Link>
+      {/* Bottom Dock Navigation */}
+      <div className="fixed bottom-8 left-0 right-0 z-50 flex justify-center pointer-events-none">
+        <div className="pointer-events-auto">
+          <DockApp />
         </div>
-      </section>
-
-      {/* Dock Navigation */}
-      <div className="fixed bottom-8 left-0 right-0 z-20">
-        <DockApp />
       </div>
     </div>
   );
-}
+} 
+                

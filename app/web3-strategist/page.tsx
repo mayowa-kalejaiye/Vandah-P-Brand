@@ -6,29 +6,29 @@ import { BentoGrid, BentoCard } from "@/components/BentoGrid";
 
 export default function Web3StrategistPage() {
   return (
-    <div className="min-h-screen w-full bg-white">
+    <div className="min-h-screen w-full bg-zinc-950 selection:bg-blue-500/30">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col items-center justify-center px-8 py-24 relative overflow-hidden">
-        {/* Background Image */}
+        {/* Background Image / Gradient */}
         <div
-          className="absolute inset-0 z-0"
+          className="absolute inset-0 z-0 bg-zinc-950"
           style={{
             backgroundImage: `
-              linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(255, 255, 255, 1) 100%),
+              linear-gradient(to bottom, rgba(9, 9, 11, 0.4) 0%, rgba(9, 9, 11, 0.8) 50%, rgba(9, 9, 11, 1) 100%),
               url('/bg.jpeg')
             `,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         />
         
         {/* Top Section - Logo/Branding and Bio */}
         <div className="absolute top-8 left-0 right-0 px-8 flex items-center justify-between z-10">
           <div className="overflow-hidden">
-            <p className="text-white/70 text-sm">© Victory Abu</p>
+            <p className="text-zinc-500 text-sm tracking-widest uppercase">© Victory Abu</p>
           </div>
           <div className="overflow-hidden">
-            <p className="text-white/90 text-sm leading-relaxed max-w-2xl text-right">
+            <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl text-right">
               Web3 enthusiast and Crypto strategist, dedicated to navigating the decentralized future through innovative blockchain solutions and financial technology.
             </p>
           </div>
@@ -48,12 +48,13 @@ export default function Web3StrategistPage() {
       </section>
 
       {/* Background Story Section */}
-      <section className="min-h-screen px-8 py-24 bg-gray-50">
+      <section className="min-h-screen px-8 py-24 bg-black border-y border-white/5">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-12">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-12 flex items-center gap-4">
+            <span className="w-12 h-[2px] bg-blue-500"></span>
             Background Story
           </h2>
-          <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+          <div className="space-y-6 text-lg text-zinc-400 leading-relaxed font-light">
             <p>
               Victory Abu's journey into Web3 began with a fascination for decentralized technologies and their 
               potential to reshape industries. She quickly recognized that blockchain wasn't just about cryptocurrency—it 
@@ -89,44 +90,49 @@ export default function Web3StrategistPage() {
       </section>
 
       {/* Results Section */}
-      <section className="min-h-screen px-8 py-24">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-12">
+      <section className="min-h-screen px-8 py-24 bg-zinc-950 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-500/5 blur-[120px] rounded-full pointer-events-none" />
+        <div className="max-w-6xl mx-auto relative z-10">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-12 flex items-center gap-4">
+            <span className="w-12 h-[2px] bg-purple-500"></span>
             Results & Achievements
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-8 bg-blue-50 rounded-lg">
-              <div className="text-5xl font-bold text-blue-600 mb-4">25+</div>
-              <p className="text-gray-700 text-lg">Web3 Projects Consulted</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="p-8 bg-zinc-900 border border-white/10 rounded-2xl backdrop-blur-sm relative overflow-hidden group hover:border-blue-500/50 transition-colors">
+              <div className="absolute -right-4 -top-4 w-24 h-24 bg-blue-500/20 rounded-full blur-2xl group-hover:bg-blue-500/40 transition-colors"></div>
+              <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 mb-4">25+</div>
+              <p className="text-zinc-400 text-lg font-light">Web3 Projects Consulted</p>
             </div>
-            <div className="p-8 bg-purple-50 rounded-lg">
-              <div className="text-5xl font-bold text-purple-600 mb-4">$5M+</div>
-              <p className="text-gray-700 text-lg">Total Value Locked Facilitated</p>
+            <div className="p-8 bg-zinc-900 border border-white/10 rounded-2xl backdrop-blur-sm relative overflow-hidden group hover:border-purple-500/50 transition-colors">
+              <div className="absolute -right-4 -top-4 w-24 h-24 bg-purple-500/20 rounded-full blur-2xl group-hover:bg-purple-500/40 transition-colors"></div>
+              <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-fuchsia-300 mb-4">$5M+</div>
+              <p className="text-zinc-400 text-lg font-light">Total Value Locked Facilitated</p>
             </div>
-            <div className="p-8 bg-emerald-50 rounded-lg">
-              <div className="text-5xl font-bold text-emerald-600 mb-4">10+</div>
-              <p className="text-gray-700 text-lg">NFT Collections Launched</p>
+            <div className="p-8 bg-zinc-900 border border-white/10 rounded-2xl backdrop-blur-sm relative overflow-hidden group hover:border-emerald-500/50 transition-colors">
+              <div className="absolute -right-4 -top-4 w-24 h-24 bg-emerald-500/20 rounded-full blur-2xl group-hover:bg-emerald-500/40 transition-colors"></div>
+              <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300 mb-4">10+</div>
+              <p className="text-zinc-400 text-lg font-light">NFT Collections Launched</p>
             </div>
-            <div className="p-8 bg-orange-50 rounded-lg">
-              <div className="text-5xl font-bold text-orange-600 mb-4">5</div>
-              <p className="text-gray-700 text-lg">DAOs Established</p>
+            <div className="p-8 bg-zinc-900 border border-white/10 rounded-2xl backdrop-blur-sm relative overflow-hidden group hover:border-orange-500/50 transition-colors">
+              <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300 mb-4">5</div>
+              <p className="text-zinc-400 text-lg font-light">DAOs Established</p>
             </div>
-            <div className="p-8 bg-pink-50 rounded-lg">
-              <div className="text-5xl font-bold text-pink-600 mb-4">50K+</div>
-              <p className="text-gray-700 text-lg">Community Members Engaged</p>
+            <div className="p-8 bg-zinc-900 border border-white/10 rounded-2xl backdrop-blur-sm relative overflow-hidden group hover:border-pink-500/50 transition-colors">
+              <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-300 mb-4">50K+</div>
+              <p className="text-zinc-400 text-lg font-light">Community Members Engaged</p>
             </div>
-            <div className="p-8 bg-indigo-50 rounded-lg">
-              <div className="text-5xl font-bold text-indigo-600 mb-4">100%</div>
-              <p className="text-gray-700 text-lg">Project Success Rate</p>
+            <div className="p-8 bg-zinc-900 border border-white/10 rounded-2xl backdrop-blur-sm relative overflow-hidden group hover:border-indigo-500/50 transition-colors">
+              <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-300 mb-4">100%</div>
+              <p className="text-zinc-400 text-lg font-light">Project Success Rate</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="min-h-screen px-8 py-24 bg-gray-50">
+      <section className="min-h-screen px-8 py-24 bg-black border-y border-white/5">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-12">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-12">
             Testimonials
           </h2>
           <BentoGrid>
@@ -167,61 +173,62 @@ export default function Web3StrategistPage() {
       </section>
 
       {/* Proof of Work Section */}
-      <section className="min-h-screen px-8 py-24">
+      <section className="min-h-screen px-8 py-24 bg-zinc-950">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-12">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-12 flex items-center gap-4">
+            <span className="w-12 h-[2px] bg-emerald-500"></span>
             Proof of Work
           </h2>
           <div className="space-y-12">
-            <div className="border-l-4 border-blue-500 pl-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">NFT Collection Strategy & Launch</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="border-l-4 border-blue-500/50 pl-8 transition-colors hover:border-blue-400">
+              <h3 className="text-2xl font-bold text-white mb-4">NFT Collection Strategy & Launch</h3>
+              <p className="text-zinc-400 font-light mb-4">
                 Developed comprehensive go-to-market strategies for 10+ NFT collections, including tokenomics design, 
                 community building, and launch execution. Projects collectively generated over $2M in initial sales.
               </p>
               <div className="flex gap-2 flex-wrap">
-                <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm">NFT Strategy</span>
-                <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm">Tokenomics</span>
-                <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm">Launch Planning</span>
+                <span className="px-4 py-2 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full text-sm">NFT Strategy</span>
+                <span className="px-4 py-2 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full text-sm">Tokenomics</span>
+                <span className="px-4 py-2 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full text-sm">Launch Planning</span>
               </div>
             </div>
 
-            <div className="border-l-4 border-purple-500 pl-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">DAO Governance Implementation</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="border-l-4 border-purple-500/50 pl-8 transition-colors hover:border-purple-400">
+              <h3 className="text-2xl font-bold text-white mb-4">DAO Governance Implementation</h3>
+              <p className="text-zinc-400 font-light mb-4">
                 Architected governance frameworks for 5 DAOs, implementing voting mechanisms, proposal systems, and 
                 treasury management protocols that ensure democratic and transparent decision-making.
               </p>
               <div className="flex gap-2 flex-wrap">
-                <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">DAO Design</span>
-                <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">Governance</span>
-                <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">Smart Contracts</span>
+                <span className="px-4 py-2 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded-full text-sm">DAO Design</span>
+                <span className="px-4 py-2 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded-full text-sm">Governance</span>
+                <span className="px-4 py-2 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded-full text-sm">Smart Contracts</span>
               </div>
             </div>
 
-            <div className="border-l-4 border-emerald-500 pl-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">DeFi Protocol Consulting</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="border-l-4 border-emerald-500/50 pl-8 transition-colors hover:border-emerald-400">
+              <h3 className="text-2xl font-bold text-white mb-4">DeFi Protocol Consulting</h3>
+              <p className="text-zinc-400 font-light mb-4">
                 Advised multiple DeFi protocols on product strategy, risk management, and market positioning. 
                 Helped projects achieve $5M+ in total value locked through strategic recommendations.
               </p>
               <div className="flex gap-2 flex-wrap">
-                <span className="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm">DeFi Strategy</span>
-                <span className="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm">Risk Management</span>
-                <span className="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm">TVL Growth</span>
+                <span className="px-4 py-2 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full text-sm">DeFi Strategy</span>
+                <span className="px-4 py-2 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full text-sm">Risk Management</span>
+                <span className="px-4 py-2 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full text-sm">TVL Growth</span>
               </div>
             </div>
 
-            <div className="border-l-4 border-orange-500 pl-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Web3 Education & Workshops</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="border-l-4 border-orange-500/50 pl-8 transition-colors hover:border-orange-400">
+              <h3 className="text-2xl font-bold text-white mb-4">Web3 Education & Workshops</h3>
+              <p className="text-zinc-400 font-light mb-4">
                 Conducted educational workshops and training sessions for companies transitioning into Web3, 
                 demystifying blockchain technology and providing practical implementation roadmaps.
               </p>
               <div className="flex gap-2 flex-wrap">
-                <span className="px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm">Education</span>
-                <span className="px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm">Workshops</span>
-                <span className="px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm">Training</span>
+                <span className="px-4 py-2 bg-orange-500/10 text-orange-400 border border-orange-500/20 rounded-full text-sm">Education</span>
+                <span className="px-4 py-2 bg-orange-500/10 text-orange-400 border border-orange-500/20 rounded-full text-sm">Workshops</span>
+                <span className="px-4 py-2 bg-orange-500/10 text-orange-400 border border-orange-500/20 rounded-full text-sm">Training</span>
               </div>
             </div>
           </div>

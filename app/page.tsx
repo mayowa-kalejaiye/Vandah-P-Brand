@@ -5,6 +5,7 @@ import Link from "next/link";
 import CanvasCurvedLoop from "@/components/CanvasCurvedLoop";
 import { DockApp } from "@/components/Dock";
 import { FlipWords } from "@/components/FlipWords";
+import Logomarquee from "@/components/Logomarquee";
 
 import VideoText from "@/components/VideoText";
 import ThreeDCard from "@/components/ThreeDCard";
@@ -61,6 +62,12 @@ export default function Home() {
         .animate-slide-up-from-line {
           animation: slideUpFromLine 1s linear forwards;
         }
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+        .font-luxury {
+          font-family: 'Fraunces', serif;
+          font-weight: 700;
+          letter-spacing: -0.02em;
+        }
       `}</style>
       
       {/* Hero Background Image with Fade */}
@@ -104,12 +111,16 @@ export default function Home() {
         {/* Top Section - Logo/Branding and Bio */}
         <div className="pt-16 px-8 flex items-start justify-between">
           <div className="overflow-hidden">
-            <p className="text-white/70 text-sm animate-slide-up">© Victory Abu</p>
+            <p className="text-white/70 text-sm animate-slide-up whitespace-nowrap">© Victory Abu</p>
           </div>
           <div className="overflow-hidden">
             <p className="text-right animate-slide-up max-w-2xl" style={{ animationDelay: "0.1s", opacity: 0 }}>
-              <strong className="block text-white text-3xl md:text-5xl font-bold leading-tight">ELEVATE YOUR BRAND</strong>
-              <span className="block text-white/90 text-base md:text-lg mt-1">with clarity • purpose • simplicity</span>
+              <strong
+                className="block text-white font-bold leading-tight text-3xl md:text-4xl lg:text-5xl"
+              >
+                BRIDGING CULTURE & <br className="hidden md:block" /> TECHNOLOGY
+              </strong>
+              <span className="block text-white/90 text-base md:text-lg mt-2 font-light">Connecting human experiences through Web3, community, and strategy.</span>
             </p>
           </div>
         </div>
@@ -117,15 +128,21 @@ export default function Home() {
         {/* Main Hero Section */}
         <div className="flex-1 flex flex-col items-center justify-center relative px-8">
 
-          {/* FlipWords - Right side, close to middle and top */}
+          {/* FlipWords - Center Hero Narrative */}
           <style>{`
             @import url('https://fonts.googleapis.com/css2?family=Phudu:wght@700&display=swap');
             .font-phudu {
               font-family: 'Phudu', cursive;
             } 
           `}</style>
-          <div className="absolute right-8 md:right-74 top-1/4 md:top-1/6">
-            <div className="relative inline-block">
+          
+          {/* Centered Profile/Bio text */}
+          <div className="relative mt-8 md:mt-24 z-20 text-center animate-slide-up" style={{ animationDelay: "0.4s", opacity: 0 }}>
+            {/* <h1 className="text-white text-3xl md:text-5xl font-light mb-8">
+              Victory Abu is a
+            </h1> */}
+            
+            <div className="relative inline-flex items-center justify-center">
               {/* Advanced Glassmorphism background */}
               <div className="absolute inset-0 w-full h-full z-0">
                 <Glass
@@ -138,7 +155,7 @@ export default function Home() {
                   className="w-full h-full rounded-full"
                 />
               </div>
-              <div className="font-phudu text-3xl md:text-5xl font-bold tracking-tight text-white py-1 px-8 flex items-center justify-center uppercase relative rounded-full z-10">
+              <div className="font-phudu text-3xl md:text-6xl font-bold tracking-tight text-white py-4 px-10 flex flex-col items-center justify-center uppercase relative rounded-full z-10 w-full md:min-w-[500px]">
                 <FlipWords 
                   words={[ 
                     "FOUNDER & CEO",
@@ -156,10 +173,10 @@ export default function Home() {
               {/* Curved border overlay */}
               <div className="absolute inset-0 border-2 border-white/50 rounded-full pointer-events-none z-20"></div>
               {/* Selection Handles for curved border */}
-              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-full -top-1.5 -left-1.5 z-30"></div>
-              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-full -top-1.5 -right-1.5 z-30"></div>
-              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-full -bottom-1.5 -left-1.5 z-30"></div>
-              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-full -bottom-1.5 -right-1.5 z-30"></div>
+              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-full top-[10%] left-[5%] z-30"></div>
+              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-full top-[10%] right-[5%] z-30"></div>
+              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-full bottom-[10%] left-[5%] z-30"></div>
+              <div className="absolute w-3 h-3 bg-white border-2 border-orange-500 rounded-full bottom-[10%] right-[5%] z-30"></div>
             </div>
           </div>
 
@@ -189,10 +206,10 @@ export default function Home() {
                 text="Web3 • Crypto • Finance • Blockchain • DeFi • NFTs • "
                 speed={1.5}
                 curveHeight={25}
-                fontSize={288}
+                fontSize={144}
                 fontFamily="'DM Sans', sans-serif"
                 fontWeight="700"
-                height={450}
+                height={225}
                 easing={0.8}
               />
             </div>
@@ -210,6 +227,7 @@ export default function Home() {
               />
             </div>
           </div>
+            {/* Logo marquee — (moved) previously here; now removed to overlay the About section */}
         </div>
 
         {/* Bottom Dock Navigation */}
@@ -223,18 +241,20 @@ export default function Home() {
     <div className="min-h-screen w-full bg-white px-8 py-16 relative">
       {/* Gradient overlay to blend with previous section */}
       <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-white/0 via-white/70 to-white pointer-events-none -mt-32"></div>
+
       
+
       {/* About Section */}
       <div className="max-w-7xl mx-auto mb-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
           <div>
             <p className="text-gray-800 text-3xl leading-relaxed font-[550]">
-              Navigating the decentralized frontier where blockchain meets innovation. I specialize in strategic Web3 consulting, transforming complex crypto ecosystems into accessible financial opportunities.
+              I partner with founders, creators, and mission-driven organizations to build trusted brands and vibrant communities in the decentralized era. Through positioning, narrative strategy, and community-first go-to-market plans, I translate emerging Web3 concepts into clear, human experiences that attract supporters, partners, and investors.
             </p>
           </div>
           <div className="text-right">
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
-              My expertise bridges the gap between traditional <br/>finance and the decentralized future, helping <br/>projects and individuals thrive in the evolving <br/>landscape of cryptocurrency and blockchain technology.
+              Services include brand strategy, community launches, partnership design, and fundraising readiness — practical, audience-first work that scales impact without the jargon.
             </p>
             <a href="#" className="inline-flex items-center gap-2 text-gray-800 text-xl font-semibold hover:underline">
               More about me
@@ -244,6 +264,10 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto mb-8">
+        <Logomarquee />
       </div>
 
       {/* Impressive Works Section */}
@@ -263,7 +287,7 @@ export default function Home() {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {/* Project 1 - CampusBestie */}
-          <div className="group cursor-pointer">
+          <Link href="/projects/campusbestie" className="group cursor-pointer block">
             <ThreeDCard className="mb-4" maxRotation={15} glowOpacity={0.3}>
               <img 
                 src="/campus.png" 
@@ -277,10 +301,10 @@ export default function Home() {
               </svg>
               <span className="text-gray-800">CampusBestie - Student Connection Platform</span>
             </div>
-          </div>
+          </Link>
 
           {/* Project 2 */}
-          <div className="group cursor-pointer">
+          <Link href="/projects/nft-marketplace" className="group cursor-pointer block">
             <ThreeDCard className="mb-4" maxRotation={15} glowOpacity={0.3}>
               <div className="h-64 rounded-2xl bg-gradient-to-br from-orange-200 via-purple-200 to-blue-300 flex items-center justify-center">
                 <div className="text-white text-4xl font-bold">
@@ -294,10 +318,10 @@ export default function Home() {
               </svg>
               <span className="text-gray-800">NFT Marketplace Consulting</span>
             </div>
-          </div>
+          </Link>
 
           {/* Project 3 */}
-          <div className="group cursor-pointer">
+          <Link href="/projects/crypto-strategy" className="group cursor-pointer block">
             <ThreeDCard className="mb-4" maxRotation={15} glowOpacity={0.3}>
               <div className="h-64 rounded-2xl bg-black flex items-center justify-center">
                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" className="text-white">
@@ -312,10 +336,10 @@ export default function Home() {
               </svg>
               <span className="text-gray-800">Crypto Trading Strategy Consulting</span>
             </div>
-          </div>
+          </Link>
 
           {/* Project 4 */}
-          <div className="group cursor-pointer">
+          <Link href="/projects/blockchain-advisory" className="group cursor-pointer block">
             <ThreeDCard className="mb-4" maxRotation={15} glowOpacity={0.3}>
               <div className="h-64 rounded-2xl bg-black flex items-center justify-center">
                 <div className="text-white text-4xl font-light">Gemini</div>
@@ -327,7 +351,7 @@ export default function Home() {
               </svg>
               <span className="text-gray-800">Blockchain Integration Advisory</span>
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* Explore More */}
