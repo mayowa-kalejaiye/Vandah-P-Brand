@@ -5,7 +5,7 @@ export default function CampusBestie() {
     <div className="min-h-screen bg-white text-gray-900">
       {/* Navbar/Back */}
       <div className="max-w-5xl mx-auto px-8 py-8">
-        <Link href="/" className="text-gray-500 hover:text-black inline-flex items-center gap-2 transition-colors text-sm font-medium tracking-wide">
+        <Link href="/#explore-my-work" className="text-gray-500 hover:text-black inline-flex items-center gap-2 transition-colors text-sm font-medium tracking-wide">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
@@ -14,31 +14,35 @@ export default function CampusBestie() {
       </div>
 
       {/* Hero Section */}
-      <div className="max-w-5xl mx-auto px-8 pt-16 pb-24">
+      <div className="max-w-5xl mx-auto px-8 pt-12 pb-16">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 mb-6 drop-shadow-sm">
           Campus Bestie: <br/><span className="text-[#e85a1f]">Grills & Chills</span>
         </h1>
         <p className="text-2xl text-gray-500 max-w-3xl leading-relaxed mb-12">
-          Managed a 200+ attendee campus event with a ₦720K budget and a 10+ member cross-functional team, balancing revenue execution with operational crisis management.
+          Managed a 200+ attendee campus event under a structured NACOS partnership, balancing a ₦720K budget, cross-functional logistics, and break-even financial execution.
         </p>
 
         {/* Metrics Bar */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 border-y border-gray-200">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 py-10 border-y border-gray-200">
           <div>
-            <p className="text-sm text-gray-500 uppercase tracking-widest font-semibold mb-1">Attendees</p>
-            <p className="text-4xl font-bold text-gray-900">224+</p>
+            <p className="text-sm text-[#e85a1f] uppercase tracking-widest font-bold mb-1">Attendees</p>
+            <p className="text-4xl font-bold text-gray-900">~224</p>
           </div>
           <div>
-            <p className="text-sm text-gray-500 uppercase tracking-widest font-semibold mb-1">Budget Managed</p>
+            <p className="text-sm text-[#e85a1f] uppercase tracking-widest font-bold mb-1">Budget</p>
             <p className="text-4xl font-bold text-gray-900">₦720K</p>
           </div>
           <div>
-            <p className="text-sm text-gray-500 uppercase tracking-widest font-semibold mb-1">VIP Revenue</p>
+            <p className="text-sm text-[#e85a1f] uppercase tracking-widest font-bold mb-1">Revenue</p>
             <p className="text-4xl font-bold text-gray-900">₦525K</p>
           </div>
           <div>
-            <p className="text-sm text-gray-500 uppercase tracking-widest font-semibold mb-1">Team Coordinated</p>
+            <p className="text-sm text-[#e85a1f] uppercase tracking-widest font-bold mb-1">Team</p>
             <p className="text-4xl font-bold text-gray-900">10+</p>
+          </div>
+          <div>
+            <p className="text-sm text-[#e85a1f] uppercase tracking-widest font-bold mb-1">VIP Slots</p>
+            <p className="text-4xl font-bold text-gray-900">30</p>
           </div>
         </div>
       </div>
@@ -49,38 +53,71 @@ export default function CampusBestie() {
           {/* Main Content */}
           <div className="md:col-span-8 space-y-16">
             
-            {/* Context */}
+            {/* Context & Partnership */}
             <section>
-              <h2 className="text-2xl font-bold mb-6 text-gray-900 border-b border-gray-200 pb-4">Context & Partnership</h2>
+              <h2 className="text-2xl font-bold mb-6 text-gray-900 border-b border-gray-200 pb-4">Context & Partnership Model</h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                Campus Bestie partnered with NACOS to design and manage an exclusive VIP product experience within a larger 200+ attendee university event. The goal was to provide high-end social engagement while successfully executing operational frameworks on top of a larger, broader campus initiative. 
+                Campus Bestie partnered with NACOS (Crawford Chapter) under a structured agreement that defined financial commitments, marketing responsibilities, and execution roles to design a VIP experience within a 200+ attendee campus event.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Rather than just coordinating the event, I established a structured partnership model. Campus Bestie leveraged NACOS for distribution, promotion, and audience access, while maintaining absolute product ownership of the VIP delivery, financing, branding, and end-to-end execution.
-              </p>
-            </section>
-
-            {/* Challenges & Crisis Management */}
-            <section>
-              <h2 className="text-2xl font-bold mb-6 text-gray-900 border-b border-gray-200 pb-4">Crisis Resolution & Operations</h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                We faced a massive last-minute compliance restriction on bringing in specialized equipment (snooker setup) which was a core feature of the VIP offering. 
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                I immediately escalated the issue directly to the university authorities, securing final operational clearance within two hours. While waiting for approval, I employed rapid crisis mitigation—diverting the VIP attendees to alternative engagements (console games, high-end ambience, and premium snacks) to protect the user experience and preserve customer satisfaction metrics during the bottleneck.
-              </p>
-            </section>
-
-            {/* Financial Control */}
-            <section>
-              <h2 className="text-2xl font-bold mb-6 text-gray-900 border-b border-gray-200 pb-4">Financial & Budget Management</h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                I oversaw a total budget execution of <strong>~₦720,000</strong>, deploying spreadsheet-driven systems to meticulously track all resource allocations.
-              </p>
+              
+              <div className="bg-gray-50 border border-gray-200 p-6 rounded-xl my-8">
+                <h3 className="text-sm uppercase tracking-widest font-bold text-gray-500 mb-4">Partnership Structure</h3>
+                <div className="flex flex-col space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-32 flex-shrink-0 font-bold text-gray-900">NACOS</div>
+                    <div className="text-gray-600">Distribution, Audience Access, Promotion</div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-32 flex-shrink-0 font-bold text-gray-900">Campus Bestie</div>
+                    <div className="text-gray-600">VIP Product, Event Experience, Revenue Generation</div>
+                  </div>
+                </div>
+              </div>
+              
               <ul className="list-disc pl-6 space-y-3 text-lg text-gray-600">
-                <li>Balanced the incoming VIP revenue (₦525,000 via 15 direct VIP tickets at ₦35K each) with internal stakeholder funding.</li>
-                <li>Ensured <strong>zero budget overruns</strong> or debt exposure, delivering a perfectly break-even financial execution optimized for brand growth rather than immediate short-term profit.</li>
-                <li>Managed the ₦150,000 upfront corporate sponsorship commitment to NACOS exactly as modeled.</li>
+                <li>Managed financial commitments including a ₦150,000 corporate sponsorship agreement alongside overall event budget execution.</li>
+                <li>Designed and executed a structured VIP experience with defined access tiers (₦35K per ticket), bundled offerings, and controlled entry systems.</li>
+                <li>Leveraged NACOS distribution channels for event marketing while maintaining absolute ownership of the branded premium experience.</li>
+              </ul>
+            </section>
+
+            {/* Actions Taken */}
+            <section>
+              <h2 className="text-2xl font-bold mb-6 text-gray-900 border-b border-gray-200 pb-4">Execution & Operations</h2>
+              
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">1. Crisis Handling & Experience Protection</h3>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Faced a last-minute campus restriction on importing specialized snooker equipment (a core VIP feature). I personally escalated the issue to school authorities, navigating bottlenecks to secure clearance within two hours. Simultaneously, I maintained attendee engagement using alternative activities (console gaming) to ensure zero drop in customer satisfaction during the wait.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">2. Financial Management</h3>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Tracked and controlled the complete ₦720K budget using structured spreadsheet systems. Balanced customer revenue (₦525K across 15 primarily ticketed VIPs + guests) with internal investments, preventing overspending and averting debt exposure to land an intentional break-even financial result.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">3. Operational Setup</h3>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Built clear role segmentation across 10+ team members and volunteers. Handled end-to-end execution including catering logistics, venue setup, game operations, and implementing strict VIP access control via tagging validation systems.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Outcome & Impact */}
+            <section>
+              <h2 className="text-2xl font-bold mb-6 text-gray-900 border-b border-gray-200 pb-4">Outcome & Impact</h2>
+              
+              <ul className="space-y-4 text-lg text-gray-600">
+                <li><strong className="text-gray-900">Attendance:</strong> Successfully hosted ~224 attendees, delivering a 30-slot structured VIP product experience.</li>
+                <li><strong className="text-gray-900">Financial Execution:</strong> Generated ₦525K in revenue while executing a ₦720K budget, resulting in a strategically break-even positioning with zero operational failure.</li>
+                <li><strong className="text-gray-900">Growth & Engagement:</strong> Drove +200-400 follower growth on TikTok through event-driven marketing, sparking strong organic social sharing from participants (UGC) validating the product-market fit of the VIP tier.</li>
+                <li><strong className="text-gray-900">Brand Positioning:</strong> Reinforced the Campus Bestie presence and ecosystem value on campus.</li>
               </ul>
             </section>
 
@@ -88,36 +125,37 @@ export default function CampusBestie() {
 
           {/* Sidebar */}
           <div className="md:col-span-4 space-y-12">
-            
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-              <h3 className="text-sm uppercase tracking-widest font-bold text-gray-400 mb-6">Execution Impact</h3>
-              <ul className="space-y-6">
-                <li>
-                  <p className="font-bold text-gray-900 text-xl">200-400</p>
-                  <p className="text-sm text-gray-500 leading-relaxed mt-1">New TikTok followers gained via event-driven viral marketing and high-quality user-generated content (UGC).</p>
+              <h3 className="text-sm uppercase tracking-widest font-bold text-gray-400 mb-6">Tools & Systems</h3>
+              <p className="text-gray-600 mb-6">
+                Used spreadsheet-based systems to manage budgeting, team coordination, and event logistics.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-white border border-gray-200 text-gray-700 text-sm font-semibold rounded-full shadow-sm">Google Sheets</span>
+                <span className="px-3 py-1 bg-white border border-gray-200 text-gray-700 text-sm font-semibold rounded-full shadow-sm">Excel</span>
+                <span className="px-3 py-1 bg-white border border-gray-200 text-gray-700 text-sm font-semibold rounded-full shadow-sm">Budget Analysis</span>
+                <span className="px-3 py-1 bg-white border border-gray-200 text-gray-700 text-sm font-semibold rounded-full shadow-sm">Timeline Workflows</span>
+                <span className="px-3 py-1 bg-white border border-gray-200 text-gray-700 text-sm font-semibold rounded-full shadow-sm">WhatsApp Comms</span>
+              </div>
+            </div>
+            
+            <div className="bg-[#fff3ef] rounded-2xl p-8 border border-[#ffe4da]">
+              <h3 className="text-sm uppercase tracking-widest font-bold text-[#e85a1f] mb-4">Core Strengths</h3>
+              <ul className="space-y-4">
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-[#e85a1f]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span className="text-gray-800 font-medium">Financial Control</span>
                 </li>
-                <li>
-                  <p className="font-bold text-gray-900 text-xl">30 VIP Slots</p>
-                  <p className="text-sm text-gray-500 leading-relaxed mt-1">Successfully deployed as a structured product offering featuring tiered tiered access and guest-listing.</p>
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-[#e85a1f]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span className="text-gray-800 font-medium">Stakeholder Alignment</span>
                 </li>
-                <li>
-                  <p className="font-bold text-gray-900 text-xl">10+ Personnel</p>
-                  <p className="text-sm text-gray-500 leading-relaxed mt-1">Built and coordinated the entire logistics matrix spanning caterers, decorators, media, and volunteers through spreadsheet models.</p>
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-[#e85a1f]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span className="text-gray-800 font-medium">Crisis Logistics</span>
                 </li>
               </ul>
             </div>
-
-            <div className="bg-orange-50 rounded-2xl p-8 border border-orange-100">
-              <h3 className="text-sm uppercase tracking-widest font-bold text-orange-800 mb-4">Tools & Systems</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-white text-orange-700 text-sm font-medium rounded-full shadow-sm">Google Sheets</span>
-                <span className="px-3 py-1 bg-white text-orange-700 text-sm font-medium rounded-full shadow-sm">Excel</span>
-                <span className="px-3 py-1 bg-white text-orange-700 text-sm font-medium rounded-full shadow-sm">Notion</span>
-                <span className="px-3 py-1 bg-white text-orange-700 text-sm font-medium rounded-full shadow-sm">Budget Matrix</span>
-                <span className="px-3 py-1 bg-white text-orange-700 text-sm font-medium rounded-full shadow-sm">Timeline Maps</span>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>

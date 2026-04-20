@@ -5,7 +5,7 @@ export default function GoNative() {
     <div className="min-h-screen bg-slate-950 text-white">
       {/* Navbar/Back */}
       <div className="max-w-5xl mx-auto px-8 py-8">
-        <Link href="/" className="text-gray-500 hover:text-white inline-flex items-center gap-2 transition-colors text-sm font-medium tracking-wide">
+        <Link href="/#explore-my-work" className="text-gray-500 hover:text-white inline-flex items-center gap-2 transition-colors text-sm font-medium tracking-wide">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
@@ -14,30 +14,30 @@ export default function GoNative() {
       </div>
 
       {/* Hero Section */}
-      <div className="max-w-5xl mx-auto px-8 pt-16 pb-24">
+      <div className="max-w-5xl mx-auto px-8 pt-12 pb-16">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 drop-shadow-sm">
           GoNative: <br/><span className="text-blue-400">Bitcoin Yield on Sui</span>
         </h1>
         <p className="text-2xl text-gray-400 max-w-3xl leading-relaxed mb-12">
-          Executed cross-functional community growth campaigns and NFT sales support as a Community Manager within a high-stakes Web3 ecosystem.
+          Community Manager with project-level ownership across growth initiatives, coordinating high-impact marketing campaigns and driving product adoption within a Web3 ecosystem.
         </p>
 
         {/* Metrics Bar */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 border-y border-slate-800">
           <div>
-            <p className="text-sm text-gray-500 uppercase tracking-widest font-semibold mb-1">Ecosystem</p>
-            <p className="text-4xl font-bold text-blue-400">Sui / BTC</p>
+            <p className="text-sm text-blue-400 uppercase tracking-widest font-bold mb-1">Ecosystem</p>
+            <p className="text-4xl font-bold text-white">Sui / BTC</p>
           </div>
           <div>
-            <p className="text-sm text-gray-500 uppercase tracking-widest font-semibold mb-1">Role Focus</p>
-            <p className="text-4xl font-bold text-white">Growth</p>
+            <p className="text-sm text-blue-400 uppercase tracking-widest font-bold mb-1">Role</p>
+            <p className="text-4xl font-bold text-white">Ops & Growth</p>
           </div>
           <div>
-            <p className="text-sm text-gray-500 uppercase tracking-widest font-semibold mb-1">Vertical</p>
-            <p className="text-4xl font-bold text-white">Web3 & DeFi</p>
+            <p className="text-sm text-blue-400 uppercase tracking-widest font-bold mb-1">Vertical</p>
+            <p className="text-4xl font-bold text-white">Web3 DeFi</p>
           </div>
           <div>
-            <p className="text-sm text-gray-500 uppercase tracking-widest font-semibold mb-1">Core KPI</p>
+            <p className="text-sm text-blue-400 uppercase tracking-widest font-bold mb-1">Focus</p>
             <p className="text-4xl font-bold text-white">Engagement</p>
           </div>
         </div>
@@ -51,35 +51,44 @@ export default function GoNative() {
             
             {/* Context */}
             <section>
-              <h2 className="text-2xl font-bold mb-6 text-white border-b border-slate-800 pb-4">Context & Alignment</h2>
+              <h2 className="text-2xl font-bold mb-6 text-white border-b border-slate-800 pb-4">Context & Project Scope</h2>
               <p className="text-lg text-gray-400 leading-relaxed mb-4">
-                GoNative operates as a pioneer in the Bitcoin yield integration on the upcoming layer-1 Sui blockchain. As the Community Manager, I functioned essentially as a decentralized Project Manager driving distribution, user acquisition, and overall brand resonance throughout the community channels.
+                GoNative is a Bitcoin yield platform built on the Sui blockchain, focused on yield generation, community growth, and product adoption. My role as Community Manager required cross-functional responsibilities that overlapped heavily with project management.
               </p>
               <p className="text-lg text-gray-400 leading-relaxed">
-                By bridging early-stage product execution with immediate go-to-market communities, I ensured the product strategy translated effectively into actionable, scalable community growth.
+                Rather than acting merely as a moderator, my contribution was structured around organizing growth systems, leveraging the community as a distribution channel, and translating technical milestones into actionable community campaigns.
               </p>
             </section>
 
             {/* Campaign Execution */}
             <section>
-              <h2 className="text-2xl font-bold mb-6 text-white border-b border-slate-800 pb-4">Campaign Execution: Brand Visibility</h2>
-              <p className="text-lg text-gray-400 leading-relaxed mb-4">
-                One of the critical growth levers I spearheaded was the GoNative Writing Contest. Designed solely to drive organic brand visibility, this campaign required strict timeline management, deep participant coordination, and constant communication funnels across Discord and Twitter.
-              </p>
-              <p className="text-lg text-gray-400 leading-relaxed">
-                I coordinated the campaign rollout end-to-end—building the engagement loop, supporting participants across varying time zones, and ensuring the writing submissions heavily amplified our foundational product features inside the wider Web3 space.
-              </p>
-            </section>
+              <h2 className="text-2xl font-bold mb-6 text-white border-b border-slate-800 pb-4">Key Contributions</h2>
+              
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-3">Community Growth Campaign (Writing Contest)</h3>
+                  <p className="text-lg text-gray-400 leading-relaxed mb-4">
+                    Coordinated a community-driven writing campaign engineered to increase brand visibility and drive engagement within the ecosystem. 
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2 text-lg text-gray-400">
+                    <li>Structured participant interaction and campaign flow.</li>
+                    <li>Acted as a support funnel to ensure smooth user acquisition.</li>
+                    <li>Strengthened GoNative&apos;s brand presence and product narrative within the broader Web3 community.</li>
+                  </ul>
+                </div>
 
-            {/* NFT Sales */}
-            <section>
-              <h2 className="text-2xl font-bold mb-6 text-white border-b border-slate-800 pb-4">Product Support: NFT Sales</h2>
-              <p className="text-lg text-gray-400 leading-relaxed mb-4">
-                Product adoption inside Web3 requires a hyper-engaged audience. During GoNative&apos;s NFT sales phase, I operated on the front-lines to drive awareness, clarify product utility to users, and directly convert community participation into quantitative results.
-              </p>
-              <p className="text-lg text-gray-400 leading-relaxed">
-                My contribution was structural—bridging the gap between the product team&apos;s deployment and the actual consumer demand, ensuring real-time support pipelines were maintained during high-volume sales windows.
-              </p>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-3">NFT Sales Support</h3>
+                  <p className="text-lg text-gray-400 leading-relaxed mb-4">
+                    Supported critical NFT sales initiatives through community engagement, structured communication, and campaign coordination.
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2 text-lg text-gray-400">
+                    <li>Contributed to the awareness phase by clarifying NFT utility to users.</li>
+                    <li>Managed real-time communication between the core project team and potential buyers.</li>
+                    <li>Helped drive awareness and participation in the NFT offerings to support the overall revenue goals of the protocol.</li>
+                  </ul>
+                </div>
+              </div>
             </section>
 
           </div>
@@ -88,31 +97,35 @@ export default function GoNative() {
           <div className="md:col-span-4 space-y-12">
             
             <div className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
-              <h3 className="text-sm uppercase tracking-widest font-bold text-gray-500 mb-6">Strategic Positioning</h3>
+              <h3 className="text-sm uppercase tracking-widest font-bold text-gray-500 mb-6">Strategic Value</h3>
               <ul className="space-y-6">
                 <li>
-                  <p className="font-bold text-white text-xl">User Acquisition</p>
-                  <p className="text-sm text-gray-400 leading-relaxed mt-1">Driving foundational brand visibility through structured community campaigns.</p>
+                  <p className="font-bold text-white text-xl">Execution</p>
+                  <p className="text-sm text-gray-400 leading-relaxed mt-1">Demonstrated capability to run growth campaigns and handle front-line user mitigation.</p>
                 </li>
                 <li>
-                  <p className="font-bold text-white text-xl">Sales Support</p>
-                  <p className="text-sm text-gray-400 leading-relaxed mt-1">On-ground mitigation of user queries to securely convert engagement into NFT acquisitions.</p>
-                </li>
-                <li>
-                  <p className="font-bold text-white text-xl">Decentralized Ops</p>
-                  <p className="text-sm text-gray-400 leading-relaxed mt-1">Navigating asynchronous, global teams and community stakeholders simultaneously.</p>
+                  <p className="font-bold text-white text-xl">Web3 Ops</p>
+                  <p className="text-sm text-gray-400 leading-relaxed mt-1">Understanding the vital role of community as a product distribution channel in decentralized environments.</p>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-blue-900/20 rounded-2xl p-8 border border-blue-500/20">
-              <h3 className="text-sm uppercase tracking-widest font-bold text-blue-400 mb-4">Ecosystem Tools</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-blue-500/10 text-blue-300 text-sm font-medium rounded-full border border-blue-500/30">Discord Strategy</span>
-                <span className="px-3 py-1 bg-blue-500/10 text-blue-300 text-sm font-medium rounded-full border border-blue-500/30">Twitter / X Operations</span>
-                <span className="px-3 py-1 bg-blue-500/10 text-blue-300 text-sm font-medium rounded-full border border-blue-500/30">Campaign Tracking</span>
-                <span className="px-3 py-1 bg-blue-500/10 text-blue-300 text-sm font-medium rounded-full border border-blue-500/30">Defi Product Metrics</span>
-              </div>
+            <div className="bg-blue-950/30 rounded-2xl p-8 border border-blue-500/20">
+              <h3 className="text-sm uppercase tracking-widest font-bold text-blue-400 mb-4">Core Strengths</h3>
+              <ul className="space-y-4">
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span className="text-gray-300 font-medium">DeFi Strategy</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span className="text-gray-300 font-medium">Token/NFT Ops</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span className="text-gray-300 font-medium">Remote Scalability</span>
+                </li>
+              </ul>
             </div>
 
           </div>
