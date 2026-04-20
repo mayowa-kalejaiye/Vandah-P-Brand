@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -83,29 +83,6 @@ export default function Home() {
         }}
       />
       
-      {/* Previous backgrounds - commented out */}
-      {/* <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `
-            linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 1) 100%),
-            url('/bg.jpeg')
-          `,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
-      
-      <div
-        className="absolute inset-0 z-[1]"
-        style={{
-          backgroundImage: `
-            radial-gradient(125% 125% at 50% 90%, rgba(255, 255, 255, 0.7) 40%, rgba(218, 128, 10, 0.8) 96%)
-          `,
-          backgroundSize: "100% 100%",
-        }}
-      /> */}
-
       {/* Content Container */}
       <div className="relative z-10 min-h-screen flex flex-col">
         {/* Top Section - Logo/Branding and Bio */}
@@ -118,9 +95,9 @@ export default function Home() {
               <strong
                 className="block text-white font-bold leading-tight text-3xl md:text-4xl lg:text-5xl"
               >
-                BRIDGING CULTURE & <br className="hidden md:block" /> TECHNOLOGY
+                FINTECH PM & <br className="hidden md:block" /> OPERATIONS LEADER
               </strong>
-              <span className="block text-white/90 text-base md:text-lg mt-2 font-light">Connecting human experiences through Web3, community, and strategy.</span>
+              <span className="block text-white/90 text-base md:text-lg mt-2 font-light">Bridging the gap between business goals and technical execution to build resilient modern financial and Web3 architecture.</span>
             </p>
           </div>
         </div>
@@ -135,12 +112,8 @@ export default function Home() {
               font-family: 'Phudu', cursive;
             } 
           `}</style>
-          
           {/* Centered Profile/Bio text */}
           <div className="relative mt-8 md:mt-24 z-20 text-center animate-slide-up" style={{ animationDelay: "0.4s", opacity: 0 }}>
-            {/* <h1 className="text-white text-3xl md:text-5xl font-light mb-8">
-              Victory Abu is a
-            </h1> */}
             
             <div className="relative inline-flex items-center justify-center">
               {/* Advanced Glassmorphism background */}
@@ -155,17 +128,14 @@ export default function Home() {
                   className="w-full h-full rounded-full"
                 />
               </div>
-              <div className="font-phudu text-3xl md:text-6xl font-bold tracking-tight text-white py-4 px-10 flex flex-col items-center justify-center uppercase relative rounded-full z-10 w-full md:min-w-[500px]">
+              <div className="font-phudu text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white py-4 px-10 flex flex-col items-center justify-center uppercase relative rounded-full z-10 w-full md:min-w-[700px]">
                 <FlipWords 
                   words={[ 
-                    "FOUNDER & CEO",
-                    "WEB3 STRATEGIST",
-                    "PROJECT CONSULTANT",
-                    "PUBLIC FIGURE",
-                    "GHOST WRITER",
-                    "COMMUNITY BUILDER",
-                    "COMMERCIAL MODEL",
-                    "PUBLIC SPEAKER"
+                    "FINTECH PROJECT MANAGER",
+                    "SYSTEMS OPERATOR",
+                    "PRODUCT STRATEGIST",
+                    "OPERATIONS LEADER",
+                    "GROWTH MANAGER"
                   ]} 
                   duration={3000} 
                 />
@@ -182,20 +152,6 @@ export default function Home() {
 
           {/* Profile Image Container - Center */}
           <div className="relative mb-0 mt-32 z-0">
-            
-            {/* Profile Image */}
-            {/* <div className="w-[550px] h-[550px] rounded-lg overflow-hidden">
-              <Image 
-                src="/Vandah2.png" 
-                alt="Victory Abu - Vandah" 
-                width={550}
-                height={550}
-                quality={100}
-                priority
-                className="w-full h-full object-cover"
-                style={{ mixBlendMode: 'multiply' }}
-              />
-            </div> */}
           </div>
 
           {/* Scrolling Curved Text */}
@@ -203,10 +159,10 @@ export default function Home() {
             {/* Mobile version - larger */}
             <div className="md:hidden pointer-events-none" style={{ color: '#ffffff' }}>
               <CanvasCurvedLoop
-                text="Web3 • Crypto • Finance • Blockchain • DeFi • NFTs • "
+                text="Fintech • Project Management • Web3 Strategy • Operations • Stakeholder Coordination • "
                 speed={1.5}
                 curveHeight={25}
-                fontSize={144}
+                fontSize={120}
                 fontFamily="'DM Sans', sans-serif"
                 fontWeight="700"
                 height={225}
@@ -216,10 +172,10 @@ export default function Home() {
             {/* Desktop version - smaller */}
             <div className="hidden md:block" style={{ color: '#ffffff' }}>
               <CanvasCurvedLoop
-                text="Web3 • Crypto • Finance • Blockchain • DeFi • NFTs • "
+                text="Fintech • Project Management • Web3 Strategy • Operations • Stakeholder Coordination • "
                 speed={1.5}
                 curveHeight={25}
-                fontSize={144}
+                fontSize={120}
                 fontFamily="'DM Sans', sans-serif"
                 fontWeight="700"
                 height={225}
@@ -227,7 +183,6 @@ export default function Home() {
               />
             </div>
           </div>
-            {/* Logo marquee — (moved) previously here; now removed to overlay the About section */}
         </div>
 
         {/* Bottom Dock Navigation */}
@@ -242,19 +197,17 @@ export default function Home() {
       {/* Gradient overlay to blend with previous section */}
       <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-white/0 via-white/70 to-white pointer-events-none -mt-32"></div>
 
-      
-
       {/* About Section */}
       <div className="max-w-7xl mx-auto mb-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
           <div>
             <p className="text-gray-800 text-3xl leading-relaxed font-[550]">
-              I partner with founders, creators, and mission-driven organizations to build trusted brands and vibrant communities in the decentralized era. Through positioning, narrative strategy, and community-first go-to-market plans, I translate emerging Web3 concepts into clear, human experiences that attract supporters, partners, and investors.
+              I lead scalable fintech and Web3 infrastructure projects. By bridging high-level project management with operations execution, I deliver end-to-end products that serve modern institutional and retail needs.
             </p>
           </div>
           <div className="text-right">
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
-              Services include brand strategy, community launches, partnership design, and fundraising readiness — practical, audience-first work that scales impact without the jargon.
+              Core competencies include stakeholder coordination, budget allocation, cross-functional team leadership, product roadmap execution, and full operational lifecycle management under pressure.
             </p>
             <a href="#" className="inline-flex items-center gap-2 text-gray-800 text-xl font-semibold hover:underline">
               More about me
@@ -273,92 +226,64 @@ export default function Home() {
       {/* Impressive Works Section */}
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end mb-12">
-          <h2 className="text-6xl font-bold text-gray-900">Featured Projects</h2>
+          <h2 className="text-6xl font-bold text-gray-900">Completed Projects</h2>
           <div className="text-right">
             <p className="text-gray-500 text-xs uppercase tracking-wider leading-relaxed">
-              STRATEGIC CONSULTING PROJECTS IN WEB3,<br/>
-              DEFI, AND BLOCKCHAIN INNOVATION<br/>
-              THAT SHOWCASE MY EXPERTISE IN<br/>
-              CRYPTO ECOSYSTEM STRATEGY.
+              PROJECT MANAGEMENT &<br/>
+              OPERATIONAL EXECUTION<br/>
+              SHOWCASING SYSTEMIC<br/>
+              GROWTH AND LEADERSHIP.
             </p>
           </div>
         </div>
         
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          {/* Project 1 - CampusBestie */}
-          <Link href="/projects/campusbestie" className="group cursor-pointer block">
+          {/* Project 1 */}
+          <Link href="/projects/campus-bestie" className="group cursor-pointer block">
             <ThreeDCard className="mb-4" maxRotation={15} glowOpacity={0.3}>
-              <img 
-                src="/campus.png" 
-                alt="CampusBestie Platform"
-                className="w-full h-64 object-cover rounded-2xl"
-              />
-            </ThreeDCard>
-            <div className="flex items-center gap-2">
-              <svg width="20" height="20" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M40.1959 33.6014C39.6459 33.5514 39.1595 33.9567 39.1095 34.5068C39.0595 35.0568 39.4648 35.5432 40.0148 35.5932L40.1054 34.5973L40.1959 33.6014ZM70.3986 37.3512L71.3945 37.2607C71.3507 36.7799 70.9698 36.399 70.4891 36.3553L70.3986 37.3512ZM72.1566 67.7349C72.2066 68.2849 72.693 68.6903 73.243 68.6403C73.793 68.5903 74.1984 68.1039 74.1484 67.5539L73.1525 67.6444L72.1566 67.7349ZM36.6443 69.6912C36.2538 70.0817 36.2538 70.7149 36.6443 71.1054C37.0349 71.496 37.668 71.496 38.0586 71.1054L37.3514 70.3983L36.6443 69.6912ZM40.1054 34.5973L40.0148 35.5932L70.308 38.3471L70.3986 37.3512L70.4891 36.3553L40.1959 33.6014L40.1054 34.5973ZM70.3986 37.3512L69.4027 37.4418L72.1566 67.7349L73.1525 67.6444L74.1484 67.5539L71.3945 37.2607L70.3986 37.3512ZM70.3986 37.3512L69.6915 36.6441L36.6443 69.6912L37.3514 70.3983L38.0586 71.1054L71.1057 38.0583L70.3986 37.3512ZM106.75 53.875H105.75C105.75 82.5248 82.5248 105.75 53.875 105.75V106.75V107.75C83.6293 107.75 107.75 83.6293 107.75 53.875H106.75ZM53.875 106.75V105.75C25.2252 105.75 2 82.5248 2 53.875H1H0C0 83.6293 24.1207 107.75 53.875 107.75V106.75ZM1 53.875H2C2 25.2252 25.2252 2 53.875 2V1V0C24.1207 0 0 24.1207 0 53.875H1ZM53.875 1V2C82.5248 2 105.75 25.2252 105.75 53.875H106.75H107.75C107.75 24.1207 83.6293 0 53.875 0V1Z" fill="#C6C6C6"/>
-              </svg>
-              <span className="text-gray-800">CampusBestie - Student Connection Platform</span>
-            </div>
-          </Link>
-
-          {/* Project 2 */}
-          <Link href="/projects/nft-marketplace" className="group cursor-pointer block">
-            <ThreeDCard className="mb-4" maxRotation={15} glowOpacity={0.3}>
-              <div className="h-64 rounded-2xl bg-gradient-to-br from-orange-200 via-purple-200 to-blue-300 flex items-center justify-center">
-                <div className="text-white text-4xl font-bold">
-                  W
+              <div className="h-64 rounded-2xl bg-gradient-to-br from-orange-900 via-[#ab3105] to-slate-900 flex flex-col justify-between overflow-hidden relative p-8 border border-orange-500/20">
+                <div className="absolute inset-0 bg-orange-500/10 blur-3xl rounded-full"></div>
+                <div className="relative z-10 w-full flex justify-between uppercase tracking-widest text-[#ffa27a] text-xs font-bold font-mono">
+                  <span>BUDGET: ₦720K</span>
+                  <span>ATTENDEES: 224+</span>
+                </div>
+                <div className="relative z-10 text-white text-4xl font-bold tracking-tight mt-auto drop-shadow-xl" style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5)"}}>
+                  Campus Bestie:<br/>Grills & Chills
                 </div>
               </div>
             </ThreeDCard>
             <div className="flex items-center gap-2">
-              <svg width="20" height="20" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M40.1959 33.6014C39.6459 33.5514 39.1595 33.9567 39.1095 34.5068C39.0595 35.0568 39.4648 35.5432 40.0148 35.5932L40.1054 34.5973L40.1959 33.6014ZM70.3986 37.3512L71.3945 37.2607C71.3507 36.7799 70.9698 36.399 70.4891 36.3553L70.3986 37.3512ZM72.1566 67.7349C72.2066 68.2849 72.693 68.6903 73.243 68.6403C73.793 68.5903 74.1984 68.1039 74.1484 67.5539L73.1525 67.6444L72.1566 67.7349ZM36.6443 69.6912C36.2538 70.0817 36.2538 70.7149 36.6443 71.1054C37.0349 71.496 37.668 71.496 38.0586 71.1054L37.3514 70.3983L36.6443 69.6912ZM40.1054 34.5973L40.0148 35.5932L70.308 38.3471L70.3986 37.3512L70.4891 36.3553L40.1959 33.6014L40.1054 34.5973ZM70.3986 37.3512L69.4027 37.4418L72.1566 67.7349L73.1525 67.6444L74.1484 67.5539L71.3945 37.2607L70.3986 37.3512ZM70.3986 37.3512L69.6915 36.6441L36.6443 69.6912L37.3514 70.3983L38.0586 71.1054L71.1057 38.0583L70.3986 37.3512ZM106.75 53.875H105.75C105.75 82.5248 82.5248 105.75 53.875 105.75V106.75V107.75C83.6293 107.75 107.75 83.6293 107.75 53.875H106.75ZM53.875 106.75V105.75C25.2252 105.75 2 82.5248 2 53.875H1H0C0 83.6293 24.1207 107.75 53.875 107.75V106.75ZM1 53.875H2C2 25.2252 25.2252 2 53.875 2V1V0C24.1207 0 0 24.1207 0 53.875H1ZM53.875 1V2C82.5248 2 105.75 25.2252 105.75 53.875H106.75H107.75C107.75 24.1207 83.6293 0 53.875 0V1Z" fill="#C6C6C6"/>
-              </svg>
-              <span className="text-gray-800">NFT Marketplace Consulting</span>
+              <span className="text-gray-800 font-semibold text-lg">Event Operations & VIP Product Execution</span>
             </div>
           </Link>
 
-          {/* Project 3 */}
-          <Link href="/projects/crypto-strategy" className="group cursor-pointer block">
+          {/* Project 2 */}
+          <Link href="/projects/gonative" className="group cursor-pointer block">
             <ThreeDCard className="mb-4" maxRotation={15} glowOpacity={0.3}>
-              <div className="h-64 rounded-2xl bg-black flex items-center justify-center">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" className="text-white">
-                  <circle cx="40" cy="40" r="30" stroke="currentColor" strokeWidth="3"/>
-                  <path d="M40 20C40 20 50 30 40 40C30 50 40 60 40 60" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-                </svg>
+              <div className="h-64 rounded-2xl bg-slate-950 flex flex-col justify-between overflow-hidden relative p-8 border border-blue-500/20">
+                <div className="absolute top-0 right-0 w-48 h-48 bg-blue-600/20 blur-[60px] rounded-full"></div>
+                <div className="absolute bottom-0 left-0 w-32 h-32 bg-purple-600/20 blur-[50px] rounded-full"></div>
+                <div className="relative z-10 w-full flex justify-between uppercase tracking-widest text-blue-400 text-xs font-bold font-mono">
+                  <span>ECOSYSTEM: SUI</span>
+                  <span>DOMAIN: WEB3</span>
+                </div>
+                <div className="relative z-10 text-white text-4xl font-bold tracking-tight mt-auto drop-shadow-xl" style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5)"}}>
+                  GoNative
+                </div>
               </div>
             </ThreeDCard>
             <div className="flex items-center gap-2">
-              <svg width="20" height="20" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M40.1959 33.6014C39.6459 33.5514 39.1595 33.9567 39.1095 34.5068C39.0595 35.0568 39.4648 35.5432 40.0148 35.5932L40.1054 34.5973L40.1959 33.6014ZM70.3986 37.3512L71.3945 37.2607C71.3507 36.7799 70.9698 36.399 70.4891 36.3553L70.3986 37.3512ZM72.1566 67.7349C72.2066 68.2849 72.693 68.6903 73.243 68.6403C73.793 68.5903 74.1984 68.1039 74.1484 67.5539L73.1525 67.6444L72.1566 67.7349ZM36.6443 69.6912C36.2538 70.0817 36.2538 70.7149 36.6443 71.1054C37.0349 71.496 37.668 71.496 38.0586 71.1054L37.3514 70.3983L36.6443 69.6912ZM40.1054 34.5973L40.0148 35.5932L70.308 38.3471L70.3986 37.3512L70.4891 36.3553L40.1959 33.6014L40.1054 34.5973ZM70.3986 37.3512L69.4027 37.4418L72.1566 67.7349L73.1525 67.6444L74.1484 67.5539L71.3945 37.2607L70.3986 37.3512ZM70.3986 37.3512L69.6915 36.6441L36.6443 69.6912L37.3514 70.3983L38.0586 71.1054L71.1057 38.0583L70.3986 37.3512ZM106.75 53.875H105.75C105.75 82.5248 82.5248 105.75 53.875 105.75V106.75V107.75C83.6293 107.75 107.75 83.6293 107.75 53.875H106.75ZM53.875 106.75V105.75C25.2252 105.75 2 82.5248 2 53.875H1H0C0 83.6293 24.1207 107.75 53.875 107.75V106.75ZM1 53.875H2C2 25.2252 25.2252 2 53.875 2V1V0C24.1207 0 0 24.1207 0 53.875H1ZM53.875 1V2C82.5248 2 105.75 25.2252 105.75 53.875H106.75H107.75C107.75 24.1207 83.6293 0 53.875 0V1Z" fill="#C6C6C6"/>
-              </svg>
-              <span className="text-gray-800">Crypto Trading Strategy Consulting</span>
-            </div>
-          </Link>
-
-          {/* Project 4 */}
-          <Link href="/projects/blockchain-advisory" className="group cursor-pointer block">
-            <ThreeDCard className="mb-4" maxRotation={15} glowOpacity={0.3}>
-              <div className="h-64 rounded-2xl bg-black flex items-center justify-center">
-                <div className="text-white text-4xl font-light">Gemini</div>
-              </div>
-            </ThreeDCard>
-            <div className="flex items-center gap-2">
-              <svg width="20" height="20" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M40.1959 33.6014C39.6459 33.5514 39.1595 33.9567 39.1095 34.5068C39.0595 35.0568 39.4648 35.5432 40.0148 35.5932L40.1054 34.5973L40.1959 33.6014ZM70.3986 37.3512L71.3945 37.2607C71.3507 36.7799 70.9698 36.399 70.4891 36.3553L70.3986 37.3512ZM72.1566 67.7349C72.2066 68.2849 72.693 68.6903 73.243 68.6403C73.793 68.5903 74.1984 68.1039 74.1484 67.5539L73.1525 67.6444L72.1566 67.7349ZM36.6443 69.6912C36.2538 70.0817 36.2538 70.7149 36.6443 71.1054C37.0349 71.496 37.668 71.496 38.0586 71.1054L37.3514 70.3983L36.6443 69.6912ZM40.1054 34.5973L40.0148 35.5932L70.308 38.3471L70.3986 37.3512L70.4891 36.3553L40.1959 33.6014L40.1054 34.5973ZM70.3986 37.3512L69.4027 37.4418L72.1566 67.7349L73.1525 67.6444L74.1484 67.5539L71.3945 37.2607L70.3986 37.3512ZM70.3986 37.3512L69.6915 36.6441L36.6443 69.6912L37.3514 70.3983L38.0586 71.1054L71.1057 38.0583L70.3986 37.3512ZM106.75 53.875H105.75C105.75 82.5248 82.5248 105.75 53.875 105.75V106.75V107.75C83.6293 107.75 107.75 83.6293 107.75 53.875H106.75ZM53.875 106.75V105.75C25.2252 105.75 2 82.5248 2 53.875H1H0C0 83.6293 24.1207 107.75 53.875 107.75V106.75ZM1 53.875H2C2 25.2252 25.2252 2 53.875 2V1V0C24.1207 0 0 24.1207 0 53.875H1ZM53.875 1V2C82.5248 2 105.75 25.2252 105.75 53.875H106.75H107.75C107.75 24.1207 83.6293 0 53.875 0V1Z" fill="#C6C6C6"/>
-              </svg>
-              <span className="text-gray-800">Blockchain Integration Advisory</span>
+              <span className="text-gray-800 font-semibold text-lg">Bitcoin Yield & Community Growth Strategy</span>
             </div>
           </Link>
         </div>
 
         {/* Explore More */}
         <div className="flex justify-center">
-          <button className="text-gray-600 text-sm flex items-center gap-2">
+          <button className="text-gray-600 text-sm flex items-center gap-2 mt-8">
             <span className="w-2 h-2 bg-gray-400 rounded-full"></span>
-            <span>Explore more</span>
+            <span>Explore more projects</span>
           </button>
         </div>
       </div>
@@ -369,120 +294,66 @@ export default function Home() {
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Explore My Work
+            Core Competencies
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover my diverse expertise across multiple fields. Click on any role to learn more about my experience, 
-            achievements, and how I can help you succeed.
+            Discover my diverse expertise in the financial technology sector. Click on any discipline to learn more about my experience, achievements, and technical methodologies.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Founder & CEO Card */}
-          <Link href="/founder-ceo" className="group">
-            <div className="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-orange-500">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-orange-500 transition-colors">
-                <svg className="w-8 h-8 text-orange-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Founder & CEO</h3>
-              <p className="text-gray-600 mb-2">@CampusBestie</p>
-              <p className="text-gray-500 text-sm">Leading innovation in campus connectivity</p>
-            </div>
-          </Link>
-
-          {/* Web3 Strategist Card */}
-          <Link href="/web3-strategist" className="group">
+          {/* Fintech PM Card */}
+          <Link href="/fintech-project-manager" className="group">
             <div className="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-blue-500">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors">
                 <svg className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Web3 Strategist</h3>
-              <p className="text-gray-500 text-sm">Blockchain strategies for the decentralized future</p>
-            </div>
-          </Link>
-
-          {/* Project Consultant Card */}
-          <Link href="/project-consultant" className="group">
-            <div className="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-emerald-500">
-              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-emerald-500 transition-colors">
-                <svg className="w-8 h-8 text-emerald-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Project Consultant</h3>
-              <p className="text-gray-500 text-sm">Strategic insights and execution excellence</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Fintech Project Management</h3>
+              <p className="text-gray-500 text-sm">Orchestrating complex financial features, timelines, and scaling launches.</p>
             </div>
           </Link>
 
-          {/* Public Figure Card */}
-          <Link href="/public-figure" className="group">
-            <div className="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-pink-500">
-              <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-pink-500 transition-colors">
-                <svg className="w-8 h-8 text-pink-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Public Figure</h3>
-              <p className="text-gray-500 text-sm">Inspiring audiences and building connections</p>
-            </div>
-          </Link>
-
-          {/* Ghost Writer Card */}
-          <Link href="/ghost-writer" className="group">
-            <div className="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-indigo-500">
-              <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-indigo-500 transition-colors">
-                <svg className="w-8 h-8 text-indigo-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Ghost Writer</h3>
-              <p className="text-gray-500 text-sm">Crafting compelling narratives that resonate</p>
-            </div>
-          </Link>
-
-          {/* Community Builder Card */}
-          <Link href="/community-builder" className="group">
+          {/* Web3 Card */}
+          <Link href="/web3-operations" className="group">
             <div className="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-emerald-500">
               <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-emerald-500 transition-colors">
                 <svg className="w-8 h-8 text-emerald-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Community Builder</h3>
-              <p className="text-gray-500 text-sm">Creating thriving communities that grow together</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Web3 Operations Leader</h3>
+              <p className="text-gray-500 text-sm">Deploying high-probability growth campaigns across decentralized communities.</p>
             </div>
           </Link>
 
-          {/* Commercial Model Card */}
-          <Link href="/commercial-model" className="group">
-            <div className="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-pink-500">
-              <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-pink-500 transition-colors">
-                <svg className="w-8 h-8 text-pink-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+          {/* Product Strategy Card */}
+          <Link href="/product-strategist" className="group">
+            <div className="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-indigo-500">
+              <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-indigo-500 transition-colors">
+                <svg className="w-8 h-8 text-indigo-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Commercial Model</h3>
-              <p className="text-gray-500 text-sm">Bringing brands to life through visual storytelling</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Product Strategist</h3>
+              <p className="text-gray-500 text-sm">Aligning distribution, UX, and operational architecture to drive product adoption.</p>
             </div>
           </Link>
 
-          {/* Public Speaker Card */}
-          <Link href="/public-speaker" className="group">
-            <div className="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-purple-500">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-purple-500 transition-colors">
-                <svg className="w-8 h-8 text-purple-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+          {/* Risk/Operations Manager Card */}
+          <Link href="/operations-manager" className="group">
+            <div className="bg-white rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-red-500">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-orange-500 transition-colors">
+                <svg className="w-8 h-8 text-orange-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Public Speaker</h3>
-              <p className="text-gray-500 text-sm">Delivering impactful presentations that inspire</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Operations Leadership</h3>
+              <p className="text-gray-500 text-sm">Budget mitigation, systemic processes, and cross-functional team execution.</p>
             </div>
           </Link>
+
         </div>
       </div>
     </div>
@@ -553,7 +424,7 @@ export default function Home() {
       <div className="w-full">
         {/* Left Side - Text */}
         <div className="flex-1">
-          <p className="text-white text-3xl md:text-4xl lg:text-6xl mb-2 font-light">your friendly  creator</p>
+          <p className="text-white text-3xl md:text-4xl lg:text-6xl mb-2 font-light">your friendly creator</p>
         </div>
       </div>
       
