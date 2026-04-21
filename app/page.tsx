@@ -391,8 +391,8 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-4 md:gap-32 pt-48">
               <div>
                 <p className="text-gray-500 text-sm mb-2">Email</p>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=victoryabu@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 text-sm md:text-lg hover:underline break-all">
-                  victoryabu@gmail.com
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=realvandah@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 text-sm md:text-lg hover:underline break-all">
+                  realvandah@gmail.com
                 </a>
               </div>
               <div>
