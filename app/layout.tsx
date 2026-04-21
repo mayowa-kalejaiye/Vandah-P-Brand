@@ -14,17 +14,22 @@ const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "500", "600", "700"],
 });
 
+
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.vandah.com"),
+
   title: "Victory Abu - Web3 Strategist & Community Builder",
-  description: "Web3 enthusiast and Crypto strategist portfolio",
+  description: "Web3 strategist helping blockchain projects scale communities, drive engagement, and build sustainable ecosystems.",
+
   openGraph: {
     title: "Victory Abu - Web3 Strategist & Community Builder",
-    description: "Web3 enthusiast and Crypto strategist portfolio",
+    description: "Web3 strategist helping blockchain projects scale communities, drive engagement, and build sustainable ecosystems.",
     url: "https://www.vandah.com",
     siteName: "Vandah",
     images: [
       {
-        url: "/public/Vandah2.png", // just change this path later
+        url: "/Vandah2.png", // just change this path later
         width: 1200,
         height: 630,
       },
@@ -32,6 +37,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+
+    twitter: {
+  card: "summary_large_image",
+  title: "Victory Abu - Web3 Strategist & Community Builder",
+  description: "Web3 strategist helping blockchain projects scale communities, drive engagement, and build sustainable ecosystems.",
+  images: ["/Vandah2.png"],
+},
 };
 
 export default function RootLayout({
