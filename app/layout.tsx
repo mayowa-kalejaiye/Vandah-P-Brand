@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Vandah",
     images: [
       {
-        url: "/Vandah2.png", // just change this path later
+        url: "public/Vandah2.png", // just change this path later
         width: 1200,
         height: 630,
       },
