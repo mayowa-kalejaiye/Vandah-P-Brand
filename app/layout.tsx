@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     title: "Victory Abu | Web3 Strategist & Community Builder",
     description: "Web3 strategist helping blockchain projects scale communities, drive engagement, and build sustainable ecosystems.",
     images: ["/vandah.png"],
-    creator: "@VictoryAbu", 
+    creator: "@realvandah", 
   },
   robots: {
     index: true,
