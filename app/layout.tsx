@@ -15,8 +15,23 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Victory Abu - Portfolio",
+  title: "Victory Abu - Web3 Strategist & Community Builder",
   description: "Web3 enthusiast and Crypto strategist portfolio",
+  openGraph: {
+    title: "Victory Abu - Web3 Strategist & Community Builder",
+    description: "Web3 enthusiast and Crypto strategist portfolio",
+    url: "https://www.vandah.com",
+    siteName: "Vandah",
+    images: [
+      {
+        url: "/Vandah2.png", // just change this path later
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
