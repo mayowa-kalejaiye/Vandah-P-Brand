@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   card: "summary_large_image",
   title: "Victory Abu - Web3 Strategist & Community Builder",
   description: "Web3 strategist helping blockchain projects scale communities, drive engagement, and build sustainable ecosystems.",
-  images: ["/Vandah2.png"],
+  images: ["/vandah.png"],
 },
 };
 
