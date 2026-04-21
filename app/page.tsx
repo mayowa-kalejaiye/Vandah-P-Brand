@@ -86,14 +86,14 @@ export default function Home() {
       {/* Content Container */}
       <div className="relative z-10 min-h-screen flex flex-col">
         {/* Top Section - Logo/Branding and Bio */}
-        <div className="pt-16 px-8 flex items-start justify-between">
-          <div className="overflow-hidden">
+        <div className="pt-16 px-8 flex flex-col md:flex-row items-start md:justify-between gap-8 md:gap-0">
+          <div className="overflow-hidden w-full md:w-auto">
             <p className="text-white/70 text-sm animate-slide-up whitespace-nowrap">© Victory Abu</p>
           </div>
-          <div className="overflow-hidden">
-            <p className="text-right animate-slide-up max-w-2xl" style={{ animationDelay: "0.1s", opacity: 0 }}>
+          <div className="overflow-hidden w-full md:w-auto md:max-w-2xl">
+            <p className="text-left md:text-right animate-slide-up" style={{ animationDelay: "0.1s", opacity: 0 }}>
               <strong
-                className="block text-white font-bold leading-tight text-3xl md:text-4xl lg:text-5xl"
+                className="block text-white font-bold leading-tight text-3xl md:text-4xl lg:text-5xl mb-2"
               >
                 FINTECH PM & <br className="hidden md:block" /> OPERATIONS LEADER
               </strong>
@@ -219,7 +219,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mb-8">
+      <div className="max-w-7xl mx-auto mb-8 pr-[7px]" id="projects">
         <Logomarquee />
       </div>
 
@@ -248,13 +248,13 @@ export default function Home() {
                   <span>BUDGET: ₦720K</span>
                   <span>ATTENDEES: 224+</span>
                 </div>
-                <div className="relative z-10 flex items-end justify-between w-full mt-auto">
-                  <div className="text-white text-4xl font-bold tracking-tight drop-shadow-xl" style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5)"}}>
+                <div className="relative z-10 flex flex-col md:flex-row items-start md:items-end justify-between w-full mt-auto gap-4 md:gap-0">
+                  <div className="text-white text-3xl md:text-4xl font-bold tracking-tight drop-shadow-xl" style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5)"}}>
                     Campus Bestie:<br/>Grills & Chills
                   </div>
                   <div className="flex gap-2">
-                    <img src="/CAMBES.png" alt="Campus Bestie Logo" className="w-12 h-12 object-contain bg-white/10 backdrop-blur-sm rounded p-1 border border-white/10 shadow-lg" />
-                    <img src="/nacos.png" alt="NACOS Logo" className="w-12 h-12 object-contain bg-white/10 backdrop-blur-sm rounded p-1 border border-white/10 shadow-lg" />
+                    <img src="/CAMBES.png" alt="Campus Bestie Logo" className="w-10 h-10 md:w-12 md:h-12 object-contain bg-white/10 backdrop-blur-sm rounded p-1 border border-white/10 shadow-lg" />
+                    <img src="/nacos.png" alt="NACOS Logo" className="w-10 h-10 md:w-12 md:h-12 object-contain bg-white/10 backdrop-blur-sm rounded p-1 border border-white/10 shadow-lg" />
                   </div>
                 </div>
               </div>
@@ -274,7 +274,7 @@ export default function Home() {
                   <span>ECOSYSTEM: SUI</span>
                   <span>DOMAIN: WEB3</span>
                 </div>
-                <div className="relative z-10 text-white text-4xl font-bold tracking-tight mt-auto drop-shadow-xl" style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5)"}}>
+                <div className="relative z-10 text-white text-3xl md:text-4xl font-bold tracking-tight mt-auto drop-shadow-xl" style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5)"}}>
                   GoNative
                 </div>
               </div>
