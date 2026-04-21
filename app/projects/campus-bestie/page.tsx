@@ -15,9 +15,15 @@ export default function CampusBestie() {
 
       {/* Hero Section */}
       <div className="max-w-5xl mx-auto px-8 pt-12 pb-16">
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 mb-6 drop-shadow-sm">
-          Campus Bestie: <br/><span className="text-[#e85a1f]">Grills & Chills</span>
-        </h1>
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-8 mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 drop-shadow-sm">
+            Campus Bestie: <br/><span className="text-[#e85a1f]">Grills & Chills</span>
+          </h1>
+          <div className="flex gap-4 md:mt-4">
+            <img src="/CAMBES.png" alt="Campus Bestie Logo" className="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg shadow-sm border border-gray-100" />
+            <img src="/nacos.png" alt="NACOS Logo" className="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg shadow-sm border border-gray-100" />
+          </div>
+        </div>
         <p className="text-2xl text-gray-500 max-w-3xl leading-relaxed mb-12">
           Managed a 200+ attendee campus event under a structured NACOS partnership, balancing a ₦720K budget, cross-functional logistics, and break-even financial execution.
         </p>

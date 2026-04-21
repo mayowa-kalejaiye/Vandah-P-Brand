@@ -219,7 +219,7 @@ const DockApp: React.FC = () => {
     { name: "Explore My Work", component: BriefcaseIcon, href: "/#explore-my-work", isExternal: false },
     { name: "LinkedIn", component: LinkedinIcon, href: "https://www.linkedin.com/in/abu-victory-479993326/", isExternal: true },
     { name: "X", component: XIcon, href: "https://x.com/realvandah", isExternal: true },
-    { name: "Mail", component: MailIcon, href: "mailto:realvandah@gmail.com", isExternal: true },
+    { name: "Mail", component: MailIcon, href: "https://mail.google.com/mail/?view=cm&fs=1&to=victoryabu@gmail.com", isExternal: true },
   ];
 
   return (

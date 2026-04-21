@@ -248,8 +248,14 @@ export default function Home() {
                   <span>BUDGET: ₦720K</span>
                   <span>ATTENDEES: 224+</span>
                 </div>
-                <div className="relative z-10 text-white text-4xl font-bold tracking-tight mt-auto drop-shadow-xl" style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5)"}}>
-                  Campus Bestie:<br/>Grills & Chills
+                <div className="relative z-10 flex items-end justify-between w-full mt-auto">
+                  <div className="text-white text-4xl font-bold tracking-tight drop-shadow-xl" style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5)"}}>
+                    Campus Bestie:<br/>Grills & Chills
+                  </div>
+                  <div className="flex gap-2">
+                    <img src="/CAMBES.png" alt="Campus Bestie Logo" className="w-12 h-12 object-contain bg-white/10 backdrop-blur-sm rounded p-1 border border-white/10 shadow-lg" />
+                    <img src="/nacos.png" alt="NACOS Logo" className="w-12 h-12 object-contain bg-white/10 backdrop-blur-sm rounded p-1 border border-white/10 shadow-lg" />
+                  </div>
                 </div>
               </div>
             </ThreeDCard>
@@ -380,8 +386,8 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-4 md:gap-32 pt-48">
               <div>
                 <p className="text-gray-500 text-sm mb-2">Email</p>
-                <a href="mailto:victoryabu@gmail.com" className="text-gray-900 text-sm md:text-lg hover:underline break-all">
-                  realvandah@gmail.com
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=victoryabu@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 text-sm md:text-lg hover:underline break-all">
+                  victoryabu@gmail.com
                 </a>
               </div>
               <div>
