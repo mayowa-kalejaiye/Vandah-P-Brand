@@ -91,14 +91,14 @@ export default function Home() {
             <p className="text-white/70 text-sm animate-slide-up whitespace-nowrap">© Victory Abu</p>
           </div>
           <div className="overflow-hidden w-full md:w-auto md:max-w-2xl">
-            <p className="text-left md:text-right animate-slide-up" style={{ animationDelay: "0.1s", opacity: 0 }}>
-              <strong
+            <h1 className="text-left md:text-right animate-slide-up" style={{ animationDelay: "0.1s", opacity: 0 }}>
+              <span
                 className="block text-white font-bold leading-tight text-3xl md:text-4xl lg:text-5xl mb-2"
               >
                 FINTECH PM & <br className="hidden md:block" /> OPERATIONS LEADER
-              </strong>
+              </span>
               <span className="block text-white/90 text-base md:text-lg mt-2 font-light">Bridging the gap between business goals and technical execution to build resilient modern financial and Web3 architecture.</span>
-            </p>
+            </h1>
           </div>
         </div>
 

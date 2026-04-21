@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Victory Abu Portfolio",
     images: [
       {
-        url: "/vandah.png", 
+        url: "/Vandah2.png", 
         width: 1200,
         height: 630,
         alt: "Victory Abu - Web3 Strategist",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Victory Abu | Web3 Strategist & Community Builder",
     description: "Web3 strategist helping blockchain projects scale communities, drive engagement, and build sustainable ecosystems.",
-    images: ["/vandah.png"],
+    images: ["/Vandah2.png"],
     creator: "@realvandah", 
   },
   robots: {
