@@ -61,20 +61,20 @@ export default function OperationsManager() {
             <h2 className="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-4">The Impact Focus</h2>
             
             <p className="text-lg text-gray-600 leading-relaxed">
-              Operations is the structural backbone of strategy. Without systemic processes, even the best technical ideas dissolve into delays and budget blowouts in execution. 
+              Operations form the structural backbone of strategy. Without systemic processes, even the best technical ideas face delays and cross-functional friction in execution. I specialize in bridging the gap between high-level vision and what can logically be sustained.
             </p>
             
             <p className="text-lg text-gray-600 leading-relaxed">
-              I specialize in bridging the gap between what is envisioned and what can logically be sustained. By documenting every workflow, anticipating compliance blockers, and tightening reporting structures, I build invisible scaffolding that protects the organization from execution failure.
+              By anticipating roadmap blockers, tightening reporting structures, and adapting to fast-paced tech environments, I build the scaffolding that ensures products grow and succeed over their full lifecycle.
             </p>
 
             <div className="mt-8 pt-8 border-t border-gray-200">
-              <h3 className="text-sm uppercase tracking-widest font-bold text-gray-400 mb-6">Execution Toolkit</h3>
+              <h3 className="text-sm uppercase tracking-widest font-bold text-gray-400 mb-6">Execution Focus</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="px-4 py-2 bg-orange-50 text-orange-700 text-sm font-bold rounded-full">Burn-rate Tracking</span>
-                <span className="px-4 py-2 bg-orange-50 text-orange-700 text-sm font-bold rounded-full">Crisis Management</span>
-                <span className="px-4 py-2 bg-orange-50 text-orange-700 text-sm font-bold rounded-full">B2B Documentation</span>
-                <span className="px-4 py-2 bg-orange-50 text-orange-700 text-sm font-bold rounded-full">Logistical Sequencing</span>
+                <span className="px-4 py-2 bg-orange-50 text-orange-700 text-sm font-bold rounded-full">Budget Management</span>
+                <span className="px-4 py-2 bg-orange-50 text-orange-700 text-sm font-bold rounded-full">Project Lifecycle</span>
+                <span className="px-4 py-2 bg-orange-50 text-orange-700 text-sm font-bold rounded-full">Partnership Logistics</span>
+                <span className="px-4 py-2 bg-orange-50 text-orange-700 text-sm font-bold rounded-full">Emerging Markets</span>
               </div>
             </div>
           </div>

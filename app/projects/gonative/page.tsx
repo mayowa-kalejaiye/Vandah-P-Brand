@@ -15,9 +15,18 @@ export default function GoNative() {
 
       {/* Hero Section */}
       <div className="max-w-5xl mx-auto px-8 pt-12 pb-16">
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 drop-shadow-sm">
-          GoNative: <br/><span className="text-blue-400">Bitcoin Yield on Sui</span>
-        </h1>
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-sm">
+            GoNative: <br/><span className="text-blue-400">Bitcoin Yield on Sui</span>
+          </h1>
+          <div className="flex items-center gap-4 bg-slate-900 border border-slate-800 p-4 rounded-full shadow-xl">
+            <img src="/native.jpeg" alt="GoNative Logo" className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full border-2 border-slate-800" />
+            <div className="pr-4 hidden sm:block">
+              <p className="text-blue-400 text-xs font-bold tracking-widest uppercase mb-1">Ecosystem Partner</p>
+              <p className="text-white font-medium">GoNative on Sui</p>
+            </div>
+          </div>
+        </div>
         <p className="text-2xl text-gray-400 max-w-3xl leading-relaxed mb-12">
           Community Manager with project-level ownership across growth initiatives, coordinating high-impact marketing campaigns and driving product adoption within a Web3 ecosystem.
         </p>

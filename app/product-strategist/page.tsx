@@ -24,7 +24,7 @@ export default function ProductStrategist() {
           Product <br/><span className="text-indigo-600">Strategist</span>
         </h1>
         <p className="text-2xl text-gray-500 max-w-3xl leading-relaxed mb-12">
-          Aligning distribution models, user experience (UX), and technical architecture to drive deep product adoption and market fit.
+          Aligning roadmap execution with market realities to drive deep product adoption and operational scalability.
         </p>
       </div>
 
@@ -36,23 +36,23 @@ export default function ProductStrategist() {
             <h2 className="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-4">Core Methodologies</h2>
             
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Product-Market Fit Validation</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Product Roadmap Strategy</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                Transitioning ideas from assumption to validated metrics. Architecting MVP structures that require the lowest feasible engineering lift while generating maximum user feedback to inform the long-term roadmap.
+                Transitioning ideas from early-stage ideation to large-scale deployment. Architecting plans that require manageable execution phases while generating the feedback needed to inform the long-term lifecycle of the product.
               </p>
             </div>
 
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Go-To-Market (GTM) Architecture</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Go-To-Market Alignment</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                A great product fails without a distribution lever. Building synchronized launch sequences aligning marketing messaging, community onboarding, and product readiness to ensure launch day momentum generates structural retention.
+                A great product requires clear distribution and adoption paths. Coordinating marketing messaging, community onboarding (specifically in Web3 environments), and product readiness to ensure successful launches.
               </p>
             </div>
 
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">User Flow & Friction Reduction</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Cross-Functional Integration</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                Auditing user onboarding processes, especially in complex fintech or Web3 environments where trust and compliance (KYC, wallet connections) inherently introduce drop-off risks.
+                Directing the flow of information between stakeholders, external partners, and execution teams. Balancing the business ambitions with operational constraints to maintain product momentum.
               </p>
             </div>
           </div>
@@ -61,20 +61,20 @@ export default function ProductStrategist() {
             <h2 className="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-4">The Impact Focus</h2>
             
             <p className="text-lg text-gray-600 leading-relaxed">
-              Product Strategy isn&apos;t just about building features—it’s about deciding what <strong>not</strong> to build. I act as the filter between user requests, stakeholder ambitions, and engineering realities.
+              Product Strategy in emerging markets and complex tech environments isn&apos;t just about building features—it’s about structured growth operations. I act as the filter between market demands, stakeholder ambitions, and operational realities.
             </p>
             
             <p className="text-lg text-gray-600 leading-relaxed">
-              By enforcing rigorous prioritization and focusing heavily on distribution architecture, I ensure that the software we ship actually solves the core problem for the user while operating smoothly within the broader business objectives.
+              By enforcing rigorous prioritization and focusing heavily on community-driven distribution, I ensure that the solutions we ship operate smoothly within the broader business objectives and are positioned to succeed over their full lifecycle.
             </p>
 
             <div className="mt-8 pt-8 border-t border-gray-200">
-              <h3 className="text-sm uppercase tracking-widest font-bold text-gray-400 mb-6">Execution Toolkit</h3>
+              <h3 className="text-sm uppercase tracking-widest font-bold text-gray-400 mb-6">Execution Focus</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="px-4 py-2 bg-indigo-50 text-indigo-700 text-sm font-bold rounded-full">GTM Sequencing</span>
-                <span className="px-4 py-2 bg-indigo-50 text-indigo-700 text-sm font-bold rounded-full">Roadmap Prioritization</span>
-                <span className="px-4 py-2 bg-indigo-50 text-indigo-700 text-sm font-bold rounded-full">Conversion Optimization</span>
-                <span className="px-4 py-2 bg-indigo-50 text-indigo-700 text-sm font-bold rounded-full">Figma/Miro</span>
+                <span className="px-4 py-2 bg-indigo-50 text-indigo-700 text-sm font-bold rounded-full">Roadmap Strategy</span>
+                <span className="px-4 py-2 bg-indigo-50 text-indigo-700 text-sm font-bold rounded-full">Community Integration</span>
+                <span className="px-4 py-2 bg-indigo-50 text-indigo-700 text-sm font-bold rounded-full">Scalable Ideation</span>
+                <span className="px-4 py-2 bg-indigo-50 text-indigo-700 text-sm font-bold rounded-full">Stakeholder Delivery</span>
               </div>
             </div>
           </div>

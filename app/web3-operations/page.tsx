@@ -21,10 +21,10 @@ export default function Web3Operations() {
           </svg>
         </div>
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 drop-shadow-sm">
-          Web3 <br/><span className="text-emerald-500">Operations Leader</span>
+          Web3 <br/><span className="text-emerald-500">Operations</span>
         </h1>
         <p className="text-2xl text-gray-400 max-w-3xl leading-relaxed mb-12">
-          Deploying high-probability growth campaigns, scaling decentralized communities, and managing remote ecosystems securely.
+          Bridging technical Web3 milestones with actionable community growth campaigns, institutional event execution, and ecosystem adoption.
         </p>
       </div>
 
@@ -36,23 +36,23 @@ export default function Web3Operations() {
             <h2 className="text-2xl font-bold text-white border-b border-slate-800 pb-4">Core Methodologies</h2>
             
             <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
-              <h3 className="text-lg font-bold text-white mb-3">Community as a Growth Channel</h3>
+              <h3 className="text-lg font-bold text-white mb-3">Community Growth & Engagement Strategy</h3>
               <p className="text-gray-400 leading-relaxed text-sm">
-                In Web3, community is product. I structure Discord, X (Twitter), and Telegram ecosystems not as chat rooms, but as primary distribution pipelines and user acquisition funnels driven by quantitative health metrics.
+                In Web3, the community is a primary distribution channel. I structure highly interactive campaigns (such as ecosystem writing contests and platform yields) focused on translating high-pressure technical deployments into accessible user adoption.
               </p>
             </div>
 
             <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
-              <h3 className="text-lg font-bold text-white mb-3">Campaign & Launch Execution</h3>
+              <h3 className="text-lg font-bold text-white mb-3">Event Operations & VIP Execution</h3>
               <p className="text-gray-400 leading-relaxed text-sm">
-                Managing the extreme volatility of token launches, NFT mints, and yield protocol deployments. Coordinating whitelist structures, running pre-launch AMAs, and mitigating frontend bottlenecks during high-traffic load events under immense pressure.
+                Scaling physical ecosystem events, such as large university tech summits (e.g., Campus Bestie: Grills & Chills). Orchestrating multi-layered budgets, stakeholder coordination, and VIP tier experiences to maintain high brand standards locally.
               </p>
             </div>
 
             <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
-              <h3 className="text-lg font-bold text-white mb-3">Decentralized & Asynchronous Ops</h3>
+              <h3 className="text-lg font-bold text-white mb-3">Ecosystem & Product Adoption</h3>
               <p className="text-gray-400 leading-relaxed text-sm">
-                Thriving in hyper-remote environments. Setting up documentation, communication protocols, and knowledge bases (Notion, GitBook) to keep global, pseudo-anonymous teams perfectly aligned on product roadmaps.
+                Acting as a critical support funnel to ensure smooth user acquisition. Maintaining the operational structures that connect DeFi products (like Sui blockchain dApps) with their target audiences, strengthening overall brand presence.
               </p>
             </div>
           </div>
@@ -61,20 +61,20 @@ export default function Web3Operations() {
             <h2 className="text-2xl font-bold text-white border-b border-slate-800 pb-4">The Impact Focus</h2>
             
             <p className="text-lg text-gray-300 leading-relaxed">
-              Crypto operates at 10x the speed of traditional tech. Standard management practices break down when dealing with rapid token deployment, constant community sentiment shifts, and borderless users. 
+              Crypto operates at an accelerated pace where community sentiment shifts instantly. Standard management practices often fail without grounded, cross-functional execution. 
             </p>
             
             <p className="text-lg text-gray-300 leading-relaxed">
-              I bring grounded operational logic to a chaotic space. By applying rigorous project management principles to decentralized systems, I ensure that marketing promises reflect actual technical capabilities, driving true ecosystem value rather than temporary hype.
+              My role is to bring operational logic to decentralized environments. From coordinating high-tier physical tech events to executing digital adoption campaigns, my focus is always on driving actual product usage and ecosystem value while navigating the complex technical landscape of blockchains.
             </p>
 
             <div className="mt-8 pt-8 border-t border-slate-800">
-              <h3 className="text-sm uppercase tracking-widest font-bold text-gray-500 mb-6">Execution Toolkit</h3>
+              <h3 className="text-sm uppercase tracking-widest font-bold text-gray-500 mb-6">Execution Focus</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="px-4 py-2 bg-emerald-900/20 text-emerald-400 text-sm font-bold rounded-full border border-emerald-500/20">DeFi Strategy</span>
-                <span className="px-4 py-2 bg-emerald-900/20 text-emerald-400 text-sm font-bold rounded-full border border-emerald-500/20">Token/NFT Ops</span>
-                <span className="px-4 py-2 bg-emerald-900/20 text-emerald-400 text-sm font-bold rounded-full border border-emerald-500/20">Discord Architecture</span>
-                <span className="px-4 py-2 bg-emerald-900/20 text-emerald-400 text-sm font-bold rounded-full border border-emerald-500/20">Remote Scalability</span>
+                <span className="px-4 py-2 bg-emerald-900/20 text-emerald-400 text-sm font-bold rounded-full border border-emerald-500/20">Growth Strategy</span>
+                <span className="px-4 py-2 bg-emerald-900/20 text-emerald-400 text-sm font-bold rounded-full border border-emerald-500/20">Event Operations</span>
+                <span className="px-4 py-2 bg-emerald-900/20 text-emerald-400 text-sm font-bold rounded-full border border-emerald-500/20">DeFi Ecosystems</span>
+                <span className="px-4 py-2 bg-emerald-900/20 text-emerald-400 text-sm font-bold rounded-full border border-emerald-500/20">Community Adoption</span>
               </div>
             </div>
           </div>

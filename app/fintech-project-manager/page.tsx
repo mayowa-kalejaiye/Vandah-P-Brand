@@ -24,7 +24,7 @@ export default function FintechProjectManager() {
           Fintech <br/><span className="text-blue-600">Project Management</span>
         </h1>
         <p className="text-2xl text-gray-500 max-w-3xl leading-relaxed mb-12">
-          Orchestrating complex financial features, strict delivery timelines, and scaling secure product launches from zero to one.
+          Transforming strategic FinTech concepts into fully operational, scalable products through adaptable project management and cross-functional coordination.
         </p>
       </div>
 
@@ -36,23 +36,23 @@ export default function FintechProjectManager() {
             <h2 className="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-4">Core Methodologies</h2>
             
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Cross-Functional Leadership</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Stakeholder & Team Coordination</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                Bridging the critical gap between engineering teams, compliance officers, and executive stakeholders. Translating complex technical constraints into actionable business timelines to ensure regulatory-compliant financial products ship correctly and on time.
+                Bridging the gap between strategy and execution. Managing cross-functional teams to ensure alignment, clear communication, and successful delivery of technical and operational milestones within the FinTech and Web3 ecosystems.
               </p>
             </div>
 
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Agile & Sprint Execution</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Product Roadmap & Strategy</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                Deploying structured sprint planning, backlog grooming, and daily stand-ups using modern tracking infrastructure (Linear, Jira, Notion). Removing blockers sequentially so developers can code, not manage.
+                Driving products from ideation through to launch. Structuring initiatives realistically to ensure long-term scalability while adapting to the fast-paced nature of emerging financial technologies.
               </p>
             </div>
 
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Requirement Gathering & Scoping</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Budget & Resource Management</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                Taking vague executive goals and breaking them into atomic, highly-scoped technical tasks. Defining exact MVP parameters to prevent scope creep while keeping an eye on the broader architectural roadmap.
+                Optimizing operational setups by directing budget allocations and resources effectively. Ensuring that project lifecycles remain within scope and deliver maximum value without compromising on quality standards.
               </p>
             </div>
           </div>
@@ -61,21 +61,21 @@ export default function FintechProjectManager() {
             <h2 className="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-4">The Impact Focus</h2>
             
             <p className="text-lg text-gray-600 leading-relaxed">
-              In fintech, moving fast breaks things—and breaking things means losing money or violating compliance. My project management philosophy is built around <strong>de-risking momentum</strong>.
+              In financial technology and Web3, successful execution relies on maintaining rigorous operational standards while remaining highly adaptable. My project management approach is built on creating structures that de-risk operations and empower teams to build efficiently.
             </p>
             
             <p className="text-lg text-gray-600 leading-relaxed">
-              I ensure that every stakeholder operates with total clarity. From managing API integrations with payment gateways to launching new user-facing banking interfaces, I enforce rigorous documentation, structured communication loops, and uncompromising quality assurance gates.
+              I ensure that every stakeholder operates with total clarity. Whether navigating the complexities of institutional scale infrastructure or early-stage growth operations, I enforce structured communication loops and full operational lifecycle management to ensure the end product succeeds.
             </p>
 
             <div className="mt-8 pt-8 border-t border-gray-200">
-              <h3 className="text-sm uppercase tracking-widest font-bold text-gray-400 mb-6">Execution Toolkit</h3>
+              <h3 className="text-sm uppercase tracking-widest font-bold text-gray-400 mb-6">Execution Focus</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-bold rounded-full">Systems Architecture</span>
-                <span className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-bold rounded-full">Scrum/Agile</span>
-                <span className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-bold rounded-full">API Integrations</span>
-                <span className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-bold rounded-full">Compliance Prep</span>
-                <span className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-bold rounded-full">Jira/Linear</span>
+                <span className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-bold rounded-full">FinTech Operations</span>
+                <span className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-bold rounded-full">Web3 Infrastructure</span>
+                <span className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-bold rounded-full">Team Coordination</span>
+                <span className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-bold rounded-full">Roadmap Execution</span>
+                <span className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-bold rounded-full">Lifecycle Management</span>
               </div>
             </div>
           </div>

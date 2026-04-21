@@ -274,8 +274,13 @@ export default function Home() {
                   <span>ECOSYSTEM: SUI</span>
                   <span>DOMAIN: WEB3</span>
                 </div>
-                <div className="relative z-10 text-white text-3xl md:text-4xl font-bold tracking-tight mt-auto drop-shadow-xl" style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5)"}}>
-                  GoNative
+                <div className="relative z-10 flex flex-col md:flex-row items-start md:items-end justify-between w-full mt-auto gap-4 md:gap-0">
+                  <div className="text-white text-3xl md:text-4xl font-bold tracking-tight drop-shadow-xl" style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5)"}}>
+                    GoNative
+                  </div>
+                  <div className="flex gap-2">
+                    <img src="/native.jpeg" alt="GoNative Logo" className="w-10 h-10 md:w-12 md:h-12 object-cover bg-white/10 backdrop-blur-sm rounded-full p-1 border border-white/10 shadow-lg" />
+                  </div>
                 </div>
               </div>
             </ThreeDCard>
