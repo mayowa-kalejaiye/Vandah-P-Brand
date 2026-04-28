@@ -114,9 +114,9 @@ export default function AboutPage() {
                   className="object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/6 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-6">
-                  <p className="text-[11px] uppercase tracking-[0.34em] text-white/75">Victory Abu</p>
-                  <p className="mt-2 max-w-sm text-2xl font-semibold leading-tight text-white">
+                <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6">
+                  <p className="text-[10px] sm:text-[11px] uppercase tracking-widest sm:tracking-[0.34em] text-white/75">Victory Abu</p>
+                  <p className="mt-2 max-w-sm text-xl sm:text-2xl font-semibold leading-tight text-white">
                     Fintech project manager, Web3 operator, and systems thinker.
                   </p>
                 </div>
@@ -124,8 +124,8 @@ export default function AboutPage() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-[1.6rem] border border-black/10 bg-white/80 p-6 shadow-sm backdrop-blur">
-                <h3 className="text-[11px] uppercase tracking-[0.35em] text-black/45">Core competencies</h3>
+              <div className="rounded-[1.6rem] border border-black/10 bg-white/80 p-5 sm:p-6 shadow-sm backdrop-blur">
+                <h3 className="text-[10px] sm:text-[11px] uppercase tracking-widest sm:tracking-[0.35em] text-black/45">Core competencies</h3>
                 <ul className="mt-4 space-y-3 text-sm leading-6 text-black/65">
                   <li>Cross-functional team and stakeholder coordination</li>
                   <li>Budget allocation and resource management</li>
@@ -134,9 +134,9 @@ export default function AboutPage() {
                 </ul>
               </div>
 
-              <div className="rounded-[1.6rem] border border-black/10 bg-[#121212] p-6 text-white shadow-sm">
-                <h3 className="text-[11px] uppercase tracking-[0.35em] text-white/45">Industry focus</h3>
-                <p className="mt-4 text-base leading-7 text-white/76">
+              <div className="rounded-[1.6rem] border border-black/10 bg-[#121212] p-5 sm:p-6 text-white shadow-sm">
+                <h3 className="text-[10px] sm:text-[11px] uppercase tracking-widest sm:tracking-[0.35em] text-white/45">Industry focus</h3>
+                <p className="mt-4 text-sm sm:text-base leading-7 text-white/76">
                   FinTech • Web3 Infrastructure • Blockchain • Growth Operations
                 </p>
                 <p className="mt-4 text-sm leading-6 text-white/55">
