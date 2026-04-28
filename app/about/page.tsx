@@ -73,8 +73,7 @@ export default function AboutPage() {
             </p>
 
             <p className="about-delay about-delay-2 about-fade mt-5 max-w-2xl text-base leading-7 text-black/60 md:text-lg">
-              The focus is on collaboration, communication, and clean delivery. That means fewer loose
-              ends, more structure, and more confidence at each stage of the lifecycle.
+              I build systems that keep teams moving with clarity. That means stakeholders stay aligned, scope stays tight, and execution stays calm.
             </p>
 
             <div className="about-delay about-delay-3 about-fade mt-8 flex flex-wrap gap-4">
@@ -132,7 +131,7 @@ export default function AboutPage() {
                   FinTech • Web3 Infrastructure • Blockchain • Growth Operations
                 </p>
                 <p className="mt-4 text-sm leading-6 text-white/55">
-                  This page now reads cleanly on mobile and desktop, with the broken resume CTA removed and the copy aligned to my portfolio.
+                  I approach every program with the same rigor: clear role definition, realistic timelines, and a bias toward structured handoffs.
                 </p>
               </div>
             </div>
