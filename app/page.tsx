@@ -6,6 +6,7 @@ import { DockApp } from "@/components/Dock";
 import { FlipWords } from "@/components/FlipWords";
 import Logomarquee from "@/components/Logomarquee";
 import ThreeDCard from "@/components/ThreeDCard";
+import { motion } from "framer-motion";
 
 const heroMetrics = [
   { label: "Programs launched", value: "12+" },
@@ -87,6 +88,13 @@ const pillars = [
     text: "Turning events, campaigns, and user engagement into measurable momentum.",
   },
 ];
+
+const subtleReveal = {
+  initial: { opacity: 0, y: 18 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.2 },
+  transition: { duration: 0.45, ease: "easeOut" as const },
+};
 
 export default function Home() {
   return (
@@ -235,11 +243,18 @@ export default function Home() {
               </div>
 
               <div className="fade-delay-400 animate-fade-up mt-10 grid gap-4 sm:grid-cols-3">
-                {heroMetrics.map((item) => (
-                  <div key={item.label} className="rounded-3xl border border-black/8 bg-white/75 p-4 shadow-sm backdrop-blur">
+                {heroMetrics.map((item, index) => (
+                  <motion.div
+                    key={item.label}
+                    initial={{ opacity: 0, y: 14 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.35 }}
+                    transition={{ duration: 0.4, ease: "easeOut", delay: index * 0.08 }}
+                    className="rounded-3xl border border-black/8 bg-white/75 p-4 shadow-sm backdrop-blur"
+                  >
                     <p className="text-sm font-medium text-black/45">{item.label}</p>
                     <p className="mt-3 text-xl font-semibold tracking-[-0.03em] text-[#121212]">{item.value}</p>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -301,14 +316,20 @@ export default function Home() {
                   Logos show who I've worked with — the work is what matters.
                 </p>
             </div>
-            <div className="rounded-[2rem] border border-black/8 bg-white/75 p-3 shadow-[0_20px_80px_rgba(17,17,17,0.08)] backdrop-blur">
+            <motion.div
+              {...subtleReveal}
+              className="rounded-[2rem] border border-black/8 bg-white/75 p-3 shadow-[0_20px_80px_rgba(17,17,17,0.08)] backdrop-blur"
+            >
               <Logomarquee />
-            </div>
+            </motion.div>
           </section>
 
           <section className="mx-auto max-w-7xl px-6 pb-24 md:px-8">
             <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-              <div className="rounded-[2rem] border border-black/10 bg-[#121212] p-8 text-white shadow-[0_30px_120px_rgba(0,0,0,0.18)]">
+              <motion.div
+                {...subtleReveal}
+                className="rounded-[2rem] border border-black/10 bg-[#121212] p-8 text-white shadow-[0_30px_120px_rgba(0,0,0,0.18)]"
+              >
                 <p className="text-[11px] uppercase tracking-[0.4em] text-white/45">What I do</p>
                 <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] md:text-4xl">Programs launched. Teams aligned. Outcomes tracked.</h2>
                 <p className="mt-4 leading-7 text-white/72">
@@ -325,18 +346,22 @@ export default function Home() {
                     </span>
                   ))}
                 </div>
-              </div>
+              </motion.div>
 
               <div className="grid gap-4 md:grid-cols-2">
-                {capabilities.map((item) => (
-                  <div
+                {capabilities.map((item, index) => (
+                  <motion.div
                     key={item.title}
+                    initial={{ opacity: 0, y: 14 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.25 }}
+                    transition={{ duration: 0.4, ease: "easeOut", delay: index * 0.06 }}
                     className="rounded-[1.6rem] border border-black/10 bg-white/80 p-6 shadow-sm backdrop-blur"
                   >
                     <p className="text-[11px] uppercase tracking-[0.35em] text-black/45">Capability</p>
                     <h3 className="mt-4 text-2xl font-semibold tracking-[-0.03em] text-[#121212]">{item.title}</h3>
                     <p className="mt-3 text-sm leading-7 text-black/62">{item.description}</p>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -359,52 +384,62 @@ export default function Home() {
             </div>
 
             <div className="grid gap-6 lg:grid-cols-2">
-              {projectCards.map((project) => (
+              {projectCards.map((project, index) => (
                 <Link key={project.title} href={project.href} className="group block">
-                  <ThreeDCard className="mb-4" maxRotation={12} glowOpacity={0.22} shadowBlur={34}>
-                    <div
-                      className={`relative flex h-[28rem] flex-col justify-between overflow-hidden rounded-[2rem] bg-gradient-to-br ${project.accent} p-8 border border-white/10`}
-                    >
-                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_36%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_36%)]" />
-                      <div className={`relative z-10 flex items-center justify-between text-[11px] font-semibold uppercase tracking-[0.35em] ${project.badgeTone ?? "text-white/70"}`}>
-                        <span>{project.badgeLeft}</span>
-                        <span>{project.badgeRight}</span>
-                      </div>
-
-                      <div className="relative z-10 mt-auto flex flex-col gap-6">
-                        <div>
-                          <h3 className={`text-3xl font-semibold tracking-[-0.04em] md:text-4xl ${project.textTone ?? "text-white"}`}>
-                            {project.title}
-                          </h3>
-                          <p className={`mt-4 max-w-xl text-sm leading-7 ${project.textSoftTone ?? "text-white/74"}`}>{project.description}</p>
+                  <motion.div
+                    initial={{ opacity: 0, y: 18 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.45, ease: "easeOut", delay: index * 0.08 }}
+                  >
+                    <ThreeDCard className="mb-4" maxRotation={12} glowOpacity={0.22} shadowBlur={34}>
+                      <div
+                        className={`relative flex h-[28rem] flex-col justify-between overflow-hidden rounded-[2rem] bg-gradient-to-br ${project.accent} p-8 border border-white/10`}
+                      >
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_36%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_36%)]" />
+                        <div className={`relative z-10 flex items-center justify-between text-[11px] font-semibold uppercase tracking-[0.35em] ${project.badgeTone ?? "text-white/70"}`}>
+                          <span>{project.badgeLeft}</span>
+                          <span>{project.badgeRight}</span>
                         </div>
 
-                        <div className="flex flex-wrap gap-3">
-                          {project.logoRow.map((logo) => (
-                            <div
-                              key={logo.alt}
-                              className={`flex ${project.logoSize ?? 'h-14 w-14'} items-center justify-center rounded-2xl border p-2 backdrop-blur ${project.logoTone ?? (project.textTone === "text-[#121212]" ? "border-black/10 bg-white/80" : "border-white/12 bg-white/10")}`}
-                            >
-                              <img src={logo.src} alt={logo.alt} className="h-full w-full object-contain" />
-                            </div>
-                          ))}
+                        <div className="relative z-10 mt-auto flex flex-col gap-6">
+                          <div>
+                            <h3 className={`text-3xl font-semibold tracking-[-0.04em] md:text-4xl ${project.textTone ?? "text-white"}`}>
+                              {project.title}
+                            </h3>
+                            <p className={`mt-4 max-w-xl text-sm leading-7 ${project.textSoftTone ?? "text-white/74"}`}>{project.description}</p>
+                          </div>
+
+                          <div className="flex flex-wrap gap-3">
+                            {project.logoRow.map((logo) => (
+                              <div
+                                key={logo.alt}
+                                className={`flex ${project.logoSize ?? "h-14 w-14"} items-center justify-center rounded-2xl border p-2 backdrop-blur ${project.logoTone ?? (project.textTone === "text-[#121212]" ? "border-black/10 bg-white/80" : "border-white/12 bg-white/10")}`}
+                              >
+                                <img src={logo.src} alt={logo.alt} className="h-full w-full object-contain" />
+                              </div>
+                            ))}
+                          </div>
                         </div>
                       </div>
+                    </ThreeDCard>
+                    <div className="flex items-center justify-between px-1">
+                      <span className="text-lg font-medium text-[#121212]">Open project</span>
+                      <span className="text-sm text-black/45 transition-transform duration-200 group-hover:translate-x-1">
+                        View details
+                      </span>
                     </div>
-                  </ThreeDCard>
-                  <div className="flex items-center justify-between px-1">
-                    <span className="text-lg font-medium text-[#121212]">Open project</span>
-                    <span className="text-sm text-black/45 transition-transform duration-200 group-hover:translate-x-1">
-                      View details
-                    </span>
-                  </div>
+                  </motion.div>
                 </Link>
               ))}
             </div>
           </section>
 
           <section className="mx-auto max-w-7xl px-6 pb-28 md:px-8">
-            <div className="rounded-[2rem] border border-black/10 bg-gradient-to-r from-[#efe7db] to-[#f8f4ee] p-8 md:p-12">
+            <motion.div
+              {...subtleReveal}
+              className="rounded-[2rem] border border-black/10 bg-gradient-to-r from-[#efe7db] to-[#f8f4ee] p-8 md:p-12"
+            >
               <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center">
                 <div>
                   <p className="text-[11px] uppercase tracking-[0.4em] text-black/45">Let's work together</p>
@@ -432,7 +467,7 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </section>
         </main>
 
