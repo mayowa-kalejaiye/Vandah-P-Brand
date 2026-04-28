@@ -458,12 +458,12 @@ export default function Home() {
                     Email me
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/abu-victory-479993326/"
+                    href="https://calendly.com/realvandah/30min"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-full border border-black/15 bg-white/80 px-6 py-3 text-sm font-medium text-black transition-transform duration-200 hover:-translate-y-0.5"
                   >
-                    LinkedIn profile
+                    Schedule a call
                   </a>
                 </div>
               </div>
