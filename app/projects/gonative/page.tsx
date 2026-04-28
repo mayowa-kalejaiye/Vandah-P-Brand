@@ -24,7 +24,7 @@ export default function GoNative() {
         <section className="grid gap-10 lg:grid-cols-[1.06fr_0.94fr] lg:items-end">
           <div>
             <p className="text-[11px] uppercase tracking-[0.4em] text-black/45">GoNative / Sui ecosystem</p>
-            <h1 className="mt-4 text-5xl font-semibold tracking-[-0.055em] leading-[0.92] text-[#121212] md:text-7xl lg:text-[6rem]">
+            <h1 className="mt-4 text-4xl sm:text-5xl font-semibold tracking-[-0.055em] leading-[0.92] text-[#121212] md:text-7xl lg:text-[6rem]">
               Bitcoin yield <br />
               <span className="text-[#2f6fe4]">on Sui.</span>
             </h1>
@@ -35,30 +35,30 @@ export default function GoNative() {
 
           <div className="rounded-[2rem] border border-black/10 bg-white p-4 shadow-[0_24px_80px_rgba(17,17,17,0.08)]">
             <div className="overflow-hidden rounded-[1.5rem] bg-[#f7f9fc] p-6">
-              <div className="flex items-center gap-4 border-b border-black/8 pb-5">
-                <img src="/native.jpeg" alt="GoNative logo" className="h-20 w-20 rounded-2xl object-cover" />
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4 border-b border-black/8 pb-5">
+                <img src="/native.jpeg" alt="GoNative logo" className="h-16 w-16 sm:h-20 sm:w-20 rounded-2xl object-cover" />
                 <div>
-                  <p className="text-[11px] uppercase tracking-[0.34em] text-black/45">Project identity</p>
-                  <p className="mt-2 text-2xl font-semibold tracking-[-0.03em] text-[#121212]">Community and yield strategy</p>
+                  <p className="text-[11px] uppercase tracking-widest sm:tracking-[0.34em] text-black/45">Project identity</p>
+                  <p className="mt-2 text-xl sm:text-2xl font-semibold tracking-[-0.03em] text-[#121212]">Community and yield strategy</p>
                 </div>
               </div>
 
-              <div className="mt-5 grid grid-cols-2 gap-4">
+              <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="rounded-2xl bg-[#eef4ff] p-4">
-                  <p className="text-[11px] uppercase tracking-[0.32em] text-[#2f6fe4]">Ecosystem</p>
-                  <p className="mt-2 text-xl font-semibold text-[#121212]">Sui / BTC</p>
+                  <p className="text-[11px] uppercase tracking-widest sm:tracking-[0.32em] text-[#2f6fe4]">Ecosystem</p>
+                  <p className="mt-2 text-lg sm:text-xl font-semibold text-[#121212]">Sui / BTC</p>
                 </div>
                 <div className="rounded-2xl bg-[#eef4ff] p-4">
-                  <p className="text-[11px] uppercase tracking-[0.32em] text-[#2f6fe4]">Role</p>
-                  <p className="mt-2 text-xl font-semibold text-[#121212]">Ops & Growth</p>
+                  <p className="text-[11px] uppercase tracking-widest sm:tracking-[0.32em] text-[#2f6fe4]">Role</p>
+                  <p className="mt-2 text-lg sm:text-xl font-semibold text-[#121212]">Ops & Growth</p>
                 </div>
                 <div className="rounded-2xl bg-[#eef4ff] p-4">
-                  <p className="text-[11px] uppercase tracking-[0.32em] text-[#2f6fe4]">Vertical</p>
-                  <p className="mt-2 text-xl font-semibold text-[#121212]">Web3 DeFi</p>
+                  <p className="text-[11px] uppercase tracking-widest sm:tracking-[0.32em] text-[#2f6fe4]">Vertical</p>
+                  <p className="mt-2 text-lg sm:text-xl font-semibold text-[#121212]">Web3 DeFi</p>
                 </div>
                 <div className="rounded-2xl bg-[#eef4ff] p-4">
-                  <p className="text-[11px] uppercase tracking-[0.32em] text-[#2f6fe4]">Focus</p>
-                  <p className="mt-2 text-xl font-semibold text-[#121212]">Engagement</p>
+                  <p className="text-[11px] uppercase tracking-widest sm:tracking-[0.32em] text-[#2f6fe4]">Focus</p>
+                  <p className="mt-2 text-lg sm:text-xl font-semibold text-[#121212]">Engagement</p>
                 </div>
               </div>
             </div>

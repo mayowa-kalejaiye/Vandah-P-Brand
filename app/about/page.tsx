@@ -62,7 +62,7 @@ export default function AboutPage() {
           </p>
         </div>
         <div className="overflow-hidden">
-          <p className="text-sm font-medium tracking-[0.2em] text-black/60 uppercase">
+          <p className="text-xs sm:text-sm font-medium tracking-wider sm:tracking-[0.2em] text-black/60 uppercase">
             VICTORY ABU / FINTECH PM & WEB3 STRATEGIST
           </p>
         </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
       <main className="relative z-10 mx-auto max-w-7xl px-6 pb-28 pt-10 md:px-8 md:pt-14">
         <section className="grid gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
           <div>
-            <h1 className="about-fade text-5xl font-semibold tracking-[-0.05em] leading-[0.92] text-[#121212] md:text-7xl lg:text-[6rem]">
+            <h1 className="about-fade text-4xl sm:text-5xl font-semibold tracking-[-0.05em] leading-[0.92] text-[#121212] md:text-7xl lg:text-[6rem]">
               Bridging vision <br />
               <span className="text-black/40">& execution.</span>
             </h1>

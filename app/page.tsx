@@ -183,9 +183,9 @@ export default function Home() {
 
       <div className="relative z-10">
         <header className="mx-auto flex max-w-7xl items-center justify-between px-6 pb-6 pt-6 md:px-8">
-          <div>
-            <p className="text-[11px] uppercase tracking-[0.4em] text-black/45">Victory Abu</p>
-            <p className="mt-2 text-sm text-black/60">Fintech PM, Web3 operator, systems thinker.</p>
+          <div className="w-full">
+            <p className="text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.4em] text-black/45">Victory Abu</p>
+            <p className="mt-2 text-xs sm:text-sm text-black/60">Fintech PM, Web3 operator, systems thinker.</p>
           </div>
           <div className="hidden items-center gap-3 rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm text-black/70 shadow-sm backdrop-blur md:flex">
             <span className="h-2 w-2 rounded-full bg-emerald-500" />
@@ -201,7 +201,7 @@ export default function Home() {
                 <span className="text-[10px] uppercase tracking-[0.32em]">Fintech x Web3 x Operations</span>
               </div>
 
-              <h1 className="fade-delay-120 animate-fade-up mt-6 max-w-3xl text-5xl font-semibold leading-[0.92] tracking-[-0.055em] text-[#121212] md:text-7xl lg:text-[6rem]">
+              <h1 className="fade-delay-120 animate-fade-up mt-6 max-w-3xl text-4xl sm:text-5xl font-semibold leading-[0.92] tracking-[-0.055em] text-[#121212] md:text-7xl lg:text-[6rem]">
                 Building the systems behind ambitious financial products and communities.
               </h1>
 
@@ -308,9 +308,9 @@ export default function Home() {
             <div className="flex flex-col gap-4 pb-6 md:flex-row md:items-end md:justify-between">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.4em] text-black/45">Proof of work</p>
-                <p className="mt-3 text-3xl font-semibold tracking-[-0.03em] text-[#121212] md:text-4xl">
+                <h2 className="mt-3 text-2xl sm:text-3xl font-semibold tracking-[-0.03em] text-[#121212] md:text-4xl">
                   Work that moves products forward.
-                </p>
+                </h2>
               </div>
                 <p className="max-w-xl text-sm leading-6 text-black/60">
                   Logos show who I've worked with — the work is what matters.
@@ -331,7 +331,7 @@ export default function Home() {
                 className="rounded-[2rem] border border-black/10 bg-[#121212] p-8 text-white shadow-[0_30px_120px_rgba(0,0,0,0.18)]"
               >
                 <p className="text-[11px] uppercase tracking-[0.4em] text-white/45">What I do</p>
-                <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] md:text-4xl">Programs launched. Teams aligned. Outcomes tracked.</h2>
+                <h2 className="mt-4 text-2xl font-semibold tracking-[-0.03em] sm:text-3xl md:text-4xl">Programs launched. Teams aligned. Outcomes tracked.</h2>
                 <p className="mt-4 leading-7 text-white/72">
                   This portfolio shows the kind of work I actually handle: fintech project coordination, Web3 community operations,
                   campus activations, and the systems that keep moving parts from slipping.
@@ -374,7 +374,7 @@ export default function Home() {
             <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.4em] text-black/45">Selected work</p>
-                <h2 className="mt-3 text-3xl font-semibold tracking-[-0.03em] text-[#121212] md:text-4xl">
+                <h2 className="mt-3 text-2xl sm:text-3xl font-semibold tracking-[-0.03em] text-[#121212] md:text-4xl">
                   Selected projects.
                 </h2>
               </div>
@@ -397,7 +397,7 @@ export default function Home() {
                         className={`relative flex h-[28rem] flex-col justify-between overflow-hidden rounded-[2rem] bg-gradient-to-br ${project.accent} p-8 border border-white/10`}
                       >
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_36%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_36%)]" />
-                        <div className={`relative z-10 flex items-center justify-between text-[11px] font-semibold uppercase tracking-[0.35em] ${project.badgeTone ?? "text-white/70"}`}>
+                        <div className={`relative z-10 flex flex-wrap gap-2 justify-between text-[11px] font-semibold uppercase tracking-widest sm:tracking-[0.35em] ${project.badgeTone ?? "text-white/70"}`}>
                           <span>{project.badgeLeft}</span>
                           <span>{project.badgeRight}</span>
                         </div>
@@ -443,7 +443,7 @@ export default function Home() {
               <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center">
                 <div>
                   <p className="text-[11px] uppercase tracking-[0.4em] text-black/45">Let's work together</p>
-                  <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-[#121212] md:text-5xl">
+                  <h2 className="mt-4 text-2xl sm:text-3xl font-semibold tracking-[-0.03em] text-[#121212] md:text-5xl">
                     Need a strategist who can bring order, clarity, and momentum?
                   </h2>
                   <p className="mt-4 max-w-2xl text-lg leading-8 text-black/68">

@@ -25,7 +25,7 @@ export default function CampusBestie() {
         <section className="grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-end">
           <div>
             <p className="text-[11px] uppercase tracking-[0.4em] text-black/45">Campus Bestie / live activation</p>
-            <h1 className="mt-4 text-5xl font-semibold tracking-[-0.055em] leading-[0.92] text-[#121212] md:text-7xl lg:text-[6rem]">
+            <h1 className="mt-4 text-4xl sm:text-5xl font-semibold tracking-[-0.055em] leading-[0.92] text-[#121212] md:text-7xl lg:text-[6rem]">
               Grills, chills,
               <br />
               <span className="text-[#e85a1f]">and campus pull.</span>
@@ -37,30 +37,30 @@ export default function CampusBestie() {
 
           <div className="rounded-[2rem] border border-black/10 bg-white p-4 shadow-[0_24px_80px_rgba(17,17,17,0.08)]">
             <div className="overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,#fff8f4_0%,#fff_48%,#f4f8ff_100%)] p-6">
-              <div className="flex items-center gap-4 border-b border-black/8 pb-5">
-                <img src="/CAMBES.png" alt="Campus Bestie logo" className="h-20 w-20 rounded-2xl object-contain" />
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4 border-b border-black/8 pb-5">
+                <img src="/CAMBES.png" alt="Campus Bestie logo" className="h-16 w-16 sm:h-20 sm:w-20 rounded-2xl object-contain" />
                 <div>
-                  <p className="text-[11px] uppercase tracking-[0.34em] text-black/45">Project identity</p>
-                  <p className="mt-2 text-2xl font-semibold tracking-[-0.03em] text-[#121212]">Campus activation with a premium tier</p>
+                  <p className="text-[11px] uppercase tracking-widest sm:tracking-[0.34em] text-black/45">Project identity</p>
+                  <p className="mt-2 text-xl sm:text-2xl font-semibold tracking-[-0.03em] text-[#121212]">Campus activation with a premium tier</p>
                 </div>
               </div>
 
-              <div className="mt-5 grid grid-cols-2 gap-4">
+              <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="rounded-2xl bg-[#fff1ea] p-4">
-                  <p className="text-[11px] uppercase tracking-[0.32em] text-[#e85a1f]">Attendance</p>
-                  <p className="mt-2 text-xl font-semibold text-[#121212]">~224 people</p>
+                  <p className="text-[11px] uppercase tracking-widest sm:tracking-[0.32em] text-[#e85a1f]">Attendance</p>
+                  <p className="mt-2 text-lg sm:text-xl font-semibold text-[#121212]">~224 people</p>
                 </div>
                 <div className="rounded-2xl bg-[#eef4ff] p-4">
-                  <p className="text-[11px] uppercase tracking-[0.32em] text-[#2f6fe4]">Team</p>
-                  <p className="mt-2 text-xl font-semibold text-[#121212]">10+ members</p>
+                  <p className="text-[11px] uppercase tracking-widest sm:tracking-[0.32em] text-[#2f6fe4]">Team</p>
+                  <p className="mt-2 text-lg sm:text-xl font-semibold text-[#121212]">10+ members</p>
                 </div>
                 <div className="rounded-2xl bg-[#fff1ea] p-4">
-                  <p className="text-[11px] uppercase tracking-[0.32em] text-[#e85a1f]">Budget</p>
-                  <p className="mt-2 text-xl font-semibold text-[#121212]">₦720K managed</p>
+                  <p className="text-[11px] uppercase tracking-widest sm:tracking-[0.32em] text-[#e85a1f]">Budget</p>
+                  <p className="mt-2 text-lg sm:text-xl font-semibold text-[#121212]">₦720K managed</p>
                 </div>
                 <div className="rounded-2xl bg-[#eef4ff] p-4">
-                  <p className="text-[11px] uppercase tracking-[0.32em] text-[#2f6fe4]">Revenue</p>
-                  <p className="mt-2 text-xl font-semibold text-[#121212]">₦525K tracked</p>
+                  <p className="text-[11px] uppercase tracking-widest sm:tracking-[0.32em] text-[#2f6fe4]">Revenue</p>
+                  <p className="mt-2 text-lg sm:text-xl font-semibold text-[#121212]">₦525K tracked</p>
                 </div>
               </div>
             </div>
