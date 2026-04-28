@@ -127,37 +127,37 @@ export default function CampusBestie() {
         </section>
 
         <section className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="rounded-[1.8rem] border border-black/10 bg-white p-7 shadow-sm">
-            <h3 className="text-[11px] uppercase tracking-[0.35em] text-[#e85a1f]">Partnership structure</h3>
+          <div className="rounded-[1.8rem] border border-black/10 bg-white p-5 sm:p-7 shadow-sm">
+            <h3 className="text-[10px] sm:text-[11px] uppercase tracking-widest sm:tracking-[0.35em] text-[#e85a1f]">Partnership structure</h3>
             <p className="mt-4 text-lg font-semibold tracking-[-0.03em] text-[#121212]">Who handled what</p>
             <div className="mt-5 space-y-4 text-sm leading-7 text-black/62">
-              <div className="flex items-start gap-4">
-                <div className="w-32 flex-shrink-0 font-semibold text-[#121212]">NACOS</div>
+              <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
+                <div className="sm:w-32 flex-shrink-0 font-semibold text-[#121212]">NACOS</div>
                 <div>Audience access, campus promotion, and student distribution.</div>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-32 flex-shrink-0 font-semibold text-[#121212]">Campus Bestie</div>
+              <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
+                <div className="sm:w-32 flex-shrink-0 font-semibold text-[#121212]">Campus Bestie</div>
                 <div>VIP product design, event experience, and revenue structure.</div>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-32 flex-shrink-0 font-semibold text-[#121212]">Shared</div>
+              <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
+                <div className="sm:w-32 flex-shrink-0 font-semibold text-[#121212]">Shared</div>
                 <div>Promotion cadence, day-of coordination, and attendee communication.</div>
               </div>
             </div>
           </div>
 
-          <div className="rounded-[1.8rem] border border-black/10 bg-white p-7 shadow-sm">
-            <h3 className="text-[11px] uppercase tracking-[0.35em] text-[#2f6fe4]">Operational stack</h3>
+          <div className="rounded-[1.8rem] border border-black/10 bg-white p-5 sm:p-7 shadow-sm">
+            <h3 className="text-[10px] sm:text-[11px] uppercase tracking-widest sm:tracking-[0.35em] text-[#2f6fe4]">Operational stack</h3>
             <p className="mt-4 text-lg font-semibold tracking-[-0.03em] text-[#121212]">The systems behind the event</p>
             <p className="mt-3 text-sm leading-7 text-black/62">
               I used lightweight tools to keep the event moving, especially for budget tracking, task ownership, and team communication.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
-              <span className="rounded-full border border-black/10 bg-[#fff7f2] px-3 py-1 text-sm font-medium text-[#7a3414]">Google Sheets</span>
-              <span className="rounded-full border border-black/10 bg-[#eef4ff] px-3 py-1 text-sm font-medium text-[#1f4ea9]">Excel</span>
-              <span className="rounded-full border border-black/10 bg-[#fff7f2] px-3 py-1 text-sm font-medium text-[#7a3414]">Budget control</span>
-              <span className="rounded-full border border-black/10 bg-[#eef4ff] px-3 py-1 text-sm font-medium text-[#1f4ea9]">Timeline planning</span>
-              <span className="rounded-full border border-black/10 bg-[#fff7f2] px-3 py-1 text-sm font-medium text-[#7a3414]">WhatsApp coordination</span>
+              <span className="rounded-full border border-black/10 bg-[#fff7f2] px-3 py-1 text-xs sm:text-sm font-medium text-[#7a3414]">Google Sheets</span>
+              <span className="rounded-full border border-black/10 bg-[#eef4ff] px-3 py-1 text-xs sm:text-sm font-medium text-[#1f4ea9]">Excel</span>
+              <span className="rounded-full border border-black/10 bg-[#fff7f2] px-3 py-1 text-xs sm:text-sm font-medium text-[#7a3414]">Budget control</span>
+              <span className="rounded-full border border-black/10 bg-[#eef4ff] px-3 py-1 text-xs sm:text-sm font-medium text-[#1f4ea9]">Timeline planning</span>
+              <span className="rounded-full border border-black/10 bg-[#fff7f2] px-3 py-1 text-xs sm:text-sm font-medium text-[#7a3414]">WhatsApp coordination</span>
             </div>
           </div>
         </section>
