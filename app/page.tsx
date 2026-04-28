@@ -281,9 +281,9 @@ export default function Home() {
                       className="object-cover object-center"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/42 via-black/8 to-transparent" />
-                    <div className="absolute inset-x-0 bottom-0 p-6">
-                      <p className="text-[11px] uppercase tracking-[0.34em] text-white/75">Victory Abu</p>
-                      <p className="mt-2 max-w-sm text-2xl font-semibold leading-tight text-white">
+                    <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6">
+                      <p className="text-[10px] sm:text-[11px] uppercase tracking-widest sm:tracking-[0.34em] text-white/75">Victory Abu</p>
+                      <p className="mt-2 max-w-sm text-xl sm:text-2xl font-semibold leading-tight text-white">
                         Fintech project manager and Web3 strategist focused on execution.
                       </p>
                     </div>
@@ -291,12 +291,12 @@ export default function Home() {
 
                   <div className="mt-4 grid gap-3 sm:grid-cols-2">
                     <div className="rounded-2xl bg-white px-4 py-4 shadow-sm">
-                      <p className="text-[11px] uppercase tracking-[0.32em] text-black/45">Primary role</p>
-                      <p className="mt-2 text-base font-medium text-black/85">Fintech Project Manager</p>
+                      <p className="text-[10px] sm:text-[11px] uppercase tracking-widest sm:tracking-[0.32em] text-black/45">Primary role</p>
+                      <p className="mt-2 text-sm sm:text-base font-medium text-black/85">Fintech Project Manager</p>
                     </div>
                     <div className="rounded-2xl bg-white px-4 py-4 shadow-sm">
-                      <p className="text-[11px] uppercase tracking-[0.32em] text-black/45">Working style</p>
-                      <p className="mt-2 text-base font-medium text-black/85">Structured, fast, calm</p>
+                      <p className="text-[10px] sm:text-[11px] uppercase tracking-widest sm:tracking-[0.32em] text-black/45">Working style</p>
+                      <p className="mt-2 text-sm sm:text-base font-medium text-black/85">Structured, fast, calm</p>
                     </div>
                   </div>
                 </div>
