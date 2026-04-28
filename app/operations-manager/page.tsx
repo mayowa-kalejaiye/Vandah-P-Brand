@@ -5,7 +5,7 @@ export default function OperationsManager() {
     <div className="min-h-screen bg-white text-gray-900">
       {/* Navbar/Back */}
       <div className="max-w-5xl mx-auto px-8 py-8">
-        <Link href="/#explore-my-work" className="text-gray-500 hover:text-black inline-flex items-center gap-2 transition-colors text-sm font-medium tracking-wide">
+        <Link href="/" className="text-gray-500 hover:text-black inline-flex items-center gap-2 transition-colors text-sm font-medium tracking-wide">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
@@ -24,7 +24,7 @@ export default function OperationsManager() {
           Operations <br/><span className="text-orange-600">Leadership</span>
         </h1>
         <p className="text-2xl text-gray-500 max-w-3xl leading-relaxed mb-12">
-          Deploying structured financial logic, robust budget mitigation, and systemic processes to fortify high-stakes execution.
+          I deploy structured financial logic, robust budget mitigation, and systemic processes to fortify high-stakes execution.
         </p>
       </div>
 
@@ -38,21 +38,21 @@ export default function OperationsManager() {
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
               <h3 className="text-lg font-bold text-gray-900 mb-3">Resource & Budget Control</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                Managing severe physical and financial limits without sacrificing product quality. Architecting deep allocation spreadsheets to track burn-rates, balance profit/loss objectives, and maintain strict break-even floors.
+                Managing severe physical and financial limits without sacrificing product quality. I architect deep allocation spreadsheets to track burn-rates, balance profit/loss objectives, and maintain strict break-even floors.
               </p>
             </div>
 
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
               <h3 className="text-lg font-bold text-gray-900 mb-3">Vendor & Stakeholder Alignment</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                Operating effectively in multi-stakeholder structures. Structuring secure partnership agreements, aligning external corporate vendors with internal engineering constraints, and driving B2B delivery objectives smoothly.
+                Operating effectively in multi-stakeholder structures. I structure secure partnership agreements, align external corporate vendors with internal engineering constraints, and drive B2B delivery objectives smoothly.
               </p>
             </div>
 
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
               <h3 className="text-lg font-bold text-gray-900 mb-3">Crisis Logistics</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                Developing proactive mitigation frameworks. When high-pressure scenarios occur (denied compliance approvals, delayed assets, technical crashes), resolving the bottleneck immediately while actively preserving user sentiment and operational stability on the front-end.
+                Developing proactive mitigation frameworks. When high-pressure scenarios occur such as denied compliance approvals, delayed assets, or technical crashes, I resolve the bottleneck immediately while preserving user sentiment and operational stability on the front-end.
               </p>
             </div>
           </div>

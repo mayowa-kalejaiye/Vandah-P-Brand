@@ -5,7 +5,7 @@ export default function ProductStrategist() {
     <div className="min-h-screen bg-white text-gray-900">
       {/* Navbar/Back */}
       <div className="max-w-5xl mx-auto px-8 py-8">
-        <Link href="/#explore-my-work" className="text-gray-500 hover:text-black inline-flex items-center gap-2 transition-colors text-sm font-medium tracking-wide">
+        <Link href="/" className="text-gray-500 hover:text-black inline-flex items-center gap-2 transition-colors text-sm font-medium tracking-wide">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
@@ -65,7 +65,7 @@ export default function ProductStrategist() {
             </p>
             
             <p className="text-lg text-gray-600 leading-relaxed">
-              By enforcing rigorous prioritization and focusing heavily on community-driven distribution, I ensure that the solutions we ship operate smoothly within the broader business objectives and are positioned to succeed over their full lifecycle.
+              By enforcing rigorous prioritization and focusing heavily on community-driven distribution, I ensure that the solutions shipped operate smoothly within broader business objectives and are positioned to succeed over their full lifecycle.
             </p>
 
             <div className="mt-8 pt-8 border-t border-gray-200">

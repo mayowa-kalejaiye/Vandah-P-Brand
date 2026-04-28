@@ -61,6 +61,24 @@ const BriefcaseIcon = ({ className }: { className?: string }) => (
     <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
   </svg>
 );
+const DocumentIcon = ({ className }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+    <path d="M14 2v6h6" />
+    <path d="M8 13h8M8 17h8" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
 const LinkedinIcon = ({ className }: { className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -116,6 +134,7 @@ interface DockIconProps {
   onClick?: () => void;
   isActive?: boolean;
   isExternal?: boolean;
+  label?: string;
 }
 
 const DockIcon: React.FC<DockIconProps> = ({
@@ -125,6 +144,7 @@ const DockIcon: React.FC<DockIconProps> = ({
   onClick,
   isActive = false,
   isExternal = false,
+  label,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const defaultMouseX = useMotionValue(Infinity);
@@ -161,18 +181,26 @@ const DockIcon: React.FC<DockIconProps> = ({
     <motion.div
       ref={ref}
       style={{ width }}
-      className={`flex aspect-square items-center justify-center rounded-full relative ${
+      className={`group flex aspect-square items-center justify-center rounded-full relative ${
         isActive ? "bg-orange-500/20" : ""
       }`}
     >
       {isActive && (
         <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-orange-500 rounded-full" />
       )}
+      {/* tooltip */}
+      {label && (
+        <div className="pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2 rounded-md bg-black text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+          {label}
+        </div>
+      )}
       <a
         href={href}
         target={isExternal ? "_blank" : undefined}
         rel={isExternal ? "noopener noreferrer" : undefined}
         className="flex h-full w-full items-center justify-center"
+        title={label}
+        aria-label={label}
         onClick={handleClick}
       >
         {children}
@@ -216,19 +244,20 @@ const DockApp: React.FC = () => {
   const icons = [
     { name: "Home", component: HomeIcon, href: "/", isExternal: false },
     { name: "Projects", component: EditIcon, href: "/#projects", isExternal: false },
-    { name: "Explore My Work", component: BriefcaseIcon, href: "/#explore-my-work", isExternal: false },
+    { name: "Resume", component: DocumentIcon, href: "/resume.pdf", isExternal: true },
     { name: "LinkedIn", component: LinkedinIcon, href: "https://www.linkedin.com/in/abu-victory-479993326/", isExternal: true },
     { name: "X", component: XIcon, href: "https://x.com/realvandah", isExternal: true },
-    { name: "Mail", component: MailIcon, href: "https://mail.google.com/mail/?view=cm&fs=1&to=Or realvandah@gmail.com", isExternal: true },
+    { name: "Mail", component: MailIcon, href: "mailto:realvandah@gmail.com", isExternal: true },
   ];
 
   return (
     <div className="flex flex-col items-center justify-end font-sans">
       <Dock>
         {icons.map((icon) => (
-          <DockIcon 
-            key={icon.name} 
+          <DockIcon
+            key={icon.name}
             href={icon.href}
+            label={icon.name}
             isActive={icon.href === "/" ? pathname === "/" : pathname === icon.href}
             isExternal={icon.isExternal}
           >

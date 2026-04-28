@@ -5,7 +5,7 @@ export default function Web3Operations() {
     <div className="min-h-screen bg-slate-950 text-white">
       {/* Navbar/Back */}
       <div className="max-w-5xl mx-auto px-8 py-8">
-        <Link href="/#explore-my-work" className="text-gray-400 hover:text-white inline-flex items-center gap-2 transition-colors text-sm font-medium tracking-wide">
+        <Link href="/" className="text-gray-400 hover:text-white inline-flex items-center gap-2 transition-colors text-sm font-medium tracking-wide">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
@@ -24,7 +24,7 @@ export default function Web3Operations() {
           Web3 <br/><span className="text-emerald-500">Operations</span>
         </h1>
         <p className="text-2xl text-gray-400 max-w-3xl leading-relaxed mb-12">
-          Bridging technical Web3 milestones with actionable community growth campaigns, institutional event execution, and ecosystem adoption.
+          I bridge technical Web3 milestones with actionable community growth campaigns, institutional event execution, and ecosystem adoption.
         </p>
       </div>
 
@@ -38,21 +38,21 @@ export default function Web3Operations() {
             <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
               <h3 className="text-lg font-bold text-white mb-3">Community Growth & Engagement Strategy</h3>
               <p className="text-gray-400 leading-relaxed text-sm">
-                In Web3, the community is a primary distribution channel. I structure highly interactive campaigns (such as ecosystem writing contests and platform yields) focused on translating high-pressure technical deployments into accessible user adoption.
+                In Web3, the community is a primary distribution channel. I structure highly interactive campaigns such as ecosystem writing contests and platform yields, translating high-pressure technical deployments into accessible user adoption.
               </p>
             </div>
 
             <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
               <h3 className="text-lg font-bold text-white mb-3">Event Operations & VIP Execution</h3>
               <p className="text-gray-400 leading-relaxed text-sm">
-                Scaling physical ecosystem events, such as large university tech summits (e.g., Campus Bestie: Grills & Chills). Orchestrating multi-layered budgets, stakeholder coordination, and VIP tier experiences to maintain high brand standards locally.
+                Scaling physical ecosystem events such as large university tech summits like Campus Bestie: Grills & Chills. I orchestrate multi-layered budgets, stakeholder coordination, and VIP tier experiences to maintain high brand standards locally.
               </p>
             </div>
 
             <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
               <h3 className="text-lg font-bold text-white mb-3">Ecosystem & Product Adoption</h3>
               <p className="text-gray-400 leading-relaxed text-sm">
-                Acting as a critical support funnel to ensure smooth user acquisition. Maintaining the operational structures that connect DeFi products (like Sui blockchain dApps) with their target audiences, strengthening overall brand presence.
+                Acting as a critical support funnel to ensure smooth user acquisition. Maintaining the operational structures that connect DeFi products like Sui blockchain dApps with their target audiences, strengthening overall brand presence.
               </p>
             </div>
           </div>
@@ -61,11 +61,11 @@ export default function Web3Operations() {
             <h2 className="text-2xl font-bold text-white border-b border-slate-800 pb-4">The Impact Focus</h2>
             
             <p className="text-lg text-gray-300 leading-relaxed">
-              Crypto operates at an accelerated pace where community sentiment shifts instantly. Standard management practices often fail without grounded, cross-functional execution. 
+              Crypto operates at an accelerated pace where community sentiment shifts instantly. Standard management practices often fail without grounded, cross-functional execution.
             </p>
             
             <p className="text-lg text-gray-300 leading-relaxed">
-              My role is to bring operational logic to decentralized environments. From coordinating high-tier physical tech events to executing digital adoption campaigns, my focus is always on driving actual product usage and ecosystem value while navigating the complex technical landscape of blockchains.
+              My role is to bring operational logic to decentralized environments. From coordinating high-tier physical tech events to executing digital adoption campaigns, my focus is on driving actual product usage and ecosystem value while navigating the complex technical landscape of blockchains.
             </p>
 
             <div className="mt-8 pt-8 border-t border-slate-800">

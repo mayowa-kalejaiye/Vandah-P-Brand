@@ -5,18 +5,14 @@ const logos1 = [
   { id: 1, component: <img src="/native.jpeg" alt="GoNative" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> },
   { id: 2, component: <img src="/nacos.png" alt="NACOS" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> },
   { id: 3, component: <img src="/CAMBES.png" alt="Campus Bestie" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> },
-  { id: 4, component: <img src="/web3.png" alt="Web3" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> },
-  { id: 5, component: <img src="/public.png" alt="Public" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> },
-  { id: 6, component: <img src="/Vandah2.png" alt="Vandah" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> }
+  { id: 4, component: <img src="/public.png" alt="Public" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> }
 ];
 
 const logos2 = [
-  { id: 1, component: <img src="/Vandah2.png" alt="Vandah" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> },
-  { id: 2, component: <img src="/public.png" alt="Public" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> },
-  { id: 3, component: <img src="/web3.png" alt="Web3" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> },
-  { id: 4, component: <img src="/CAMBES.png" alt="Campus Bestie" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> },
-  { id: 5, component: <img src="/nacos.png" alt="NACOS" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> },
-  { id: 6, component: <img src="/native.jpeg" alt="GoNative" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> }
+  { id: 1, component: <img src="/public.png" alt="Public" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> },
+  { id: 2, component: <img src="/CAMBES.png" alt="Campus Bestie" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> },
+  { id: 3, component: <img src="/nacos.png" alt="NACOS" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> },
+  { id: 4, component: <img src="/native.jpeg" alt="GoNative" className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" /> }
 ];
 
 function Logomarquee() {

@@ -70,7 +70,7 @@ export const FlipWords = ({
 
   return (
     <div
-      className={`inline-block align-middle overflow-hidden h-[1.2em] leading-none ${className}`}
+      className={`inline-block align-middle overflow-visible h-auto min-h-[1.2em] leading-none ${className}`}
     >
       <AnimatePresence mode="wait">
         <motion.div

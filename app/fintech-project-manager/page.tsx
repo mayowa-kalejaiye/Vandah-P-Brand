@@ -5,7 +5,7 @@ export default function FintechProjectManager() {
     <div className="min-h-screen bg-white text-gray-900">
       {/* Navbar/Back */}
       <div className="max-w-5xl mx-auto px-8 py-8">
-        <Link href="/#explore-my-work" className="text-gray-500 hover:text-black inline-flex items-center gap-2 transition-colors text-sm font-medium tracking-wide">
+        <Link href="/" className="text-gray-500 hover:text-black inline-flex items-center gap-2 transition-colors text-sm font-medium tracking-wide">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
@@ -24,7 +24,7 @@ export default function FintechProjectManager() {
           Fintech <br/><span className="text-blue-600">Project Management</span>
         </h1>
         <p className="text-2xl text-gray-500 max-w-3xl leading-relaxed mb-12">
-          Transforming strategic FinTech concepts into fully operational, scalable products through adaptable project management and cross-functional coordination.
+          I transform strategic FinTech concepts into fully operational, scalable products through adaptable project management and cross-functional coordination.
         </p>
       </div>
 
@@ -38,14 +38,14 @@ export default function FintechProjectManager() {
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
               <h3 className="text-lg font-bold text-gray-900 mb-3">Stakeholder & Team Coordination</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                Bridging the gap between strategy and execution. Managing cross-functional teams to ensure alignment, clear communication, and successful delivery of technical and operational milestones within the FinTech and Web3 ecosystems.
+                Bridging the gap between strategy and execution. I manage cross-functional teams to ensure alignment, clear communication, and successful delivery of technical and operational milestones within the FinTech and Web3 ecosystems.
               </p>
             </div>
 
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
               <h3 className="text-lg font-bold text-gray-900 mb-3">Product Roadmap & Strategy</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                Driving products from ideation through to launch. Structuring initiatives realistically to ensure long-term scalability while adapting to the fast-paced nature of emerging financial technologies.
+                Driving products from ideation through to launch. I structure initiatives realistically to ensure long-term scalability while adapting to the fast-paced nature of emerging financial technologies.
               </p>
             </div>
 
