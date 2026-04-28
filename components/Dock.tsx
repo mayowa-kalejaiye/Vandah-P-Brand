@@ -149,9 +149,9 @@ const DockIcon: React.FC<DockIconProps> = ({
   const ref = useRef<HTMLDivElement>(null);
   const defaultMouseX = useMotionValue(Infinity);
 
-  const iconSize = 36;
-  const iconMagnification = 60;
-  const iconDistance = 140;
+  const iconSize = 32;
+  const iconMagnification = 48;
+  const iconDistance = 120;
 
   const distance = useTransform(mouseX ?? defaultMouseX, (val) => {
     const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
@@ -190,7 +190,7 @@ const DockIcon: React.FC<DockIconProps> = ({
       )}
       {/* tooltip */}
       {label && (
-        <div className="pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2 rounded-md bg-black text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+        <div className="pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2 rounded-md bg-black text-white text-[10px] sm:text-xs px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
           {label}
         </div>
       )}
@@ -220,7 +220,7 @@ const Dock: React.FC<DockProps> = ({ children }) => {
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
-      className="flex h-[58px] items-center gap-2 rounded-2xl bg-white/80 dark:bg-black/50 px-2 border border-black/10 dark:border-white/10 backdrop-blur-lg"
+      className="flex h-[50px] sm:h-[58px] items-center gap-1 sm:gap-2 rounded-2xl bg-white/80 dark:bg-black/50 px-2 sm:px-3 border border-black/10 dark:border-white/10 backdrop-blur-lg w-max"
     >
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child) && child.type === DockIcon) {
