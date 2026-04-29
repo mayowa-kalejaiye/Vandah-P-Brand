@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.vandah.com"),
 
   title: {
-    default: "Victory Abu | Web3 Strategist & Community Builder",
+    default: "Victory Abu | Fintech PM & Web3 Strategist",
     template: "%s | Victory Abu",
   },
-  description: "Web3 strategist and community builder helping blockchain, SaaS, and tech projects scale communities, drive engagement, and build sustainable ecosystems.",
-  keywords: ["Victory Abu", "Web3 Strategist", "Community Builder", "Blockchain", "Crypto", "Community Manager", "Tech Consultant", "SaaS Strategy", "Public Speaker"],
+  description: "Fintech project manager and Web3 strategist focused on execution, launch coordination, and operations for ambitious financial products and ecosystems.",
+  keywords: ["Victory Abu", "Fintech PM", "Web3 Strategist", "Operations Manager", "Project Manager", "Blockchain", "Crypto", "Systems Thinker", "Launch Coordination"],
   authors: [{ name: "Victory Abu", url: "https://www.vandah.com" }],
   creator: "Victory Abu",
   publisher: "Victory Abu",
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Victory Abu | Web3 Strategist & Community Builder",
-    description: "Web3 strategist helping blockchain projects scale communities, drive engagement, and build sustainable ecosystems.",
+    title: "Victory Abu | Fintech PM & Web3 Strategist",
+    description: "Fintech project manager and Web3 strategist focused on execution, launch coordination, and operations for ambitious financial products and ecosystems.",
     url: "https://www.vandah.com",
     siteName: "Victory Abu Portfolio",
     images: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         url: "/Vandah2.png", 
         width: 1200,
         height: 630,
-        alt: "Victory Abu - Web3 Strategist",
+        alt: "Victory Abu - Fintech PM & Web3 Strategist",
       },
     ],
     locale: "en_US",
@@ -55,8 +55,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Victory Abu | Web3 Strategist & Community Builder",
-    description: "Web3 strategist helping blockchain projects scale communities, drive engagement, and build sustainable ecosystems.",
+    title: "Victory Abu | Fintech PM & Web3 Strategist",
+    description: "Fintech project manager and Web3 strategist focused on execution, launch coordination, and operations for ambitious financial products and ecosystems.",
     images: ["/Vandah2.png"],
     creator: "@realvandah", 
   },

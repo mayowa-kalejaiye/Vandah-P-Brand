@@ -130,6 +130,15 @@ export default function GoNative() {
             </div>
           </div>
         </section>
+
+        <div className="mt-12 flex justify-center">
+          <Link
+            href="/#projects"
+            className="inline-flex items-center gap-2 rounded-full border border-black/15 bg-white/80 px-6 py-3 text-sm font-medium text-black transition-transform duration-200 hover:-translate-y-0.5 shadow-sm"
+          >
+            ← Back to projects
+          </Link>
+        </div>
       </main>
     </div>
   );
